@@ -2582,12 +2582,6 @@ span.enhanced.ring {
 
 /* FloatClears */
 
-.mainHeader:after, .menuHolder .port:after, .topBarPort:after, .boldSiteFooter:before, .boldSiteFooter:after, .boldSiteFooter .port:after, .contentWrap:after, .contentHolder:after, .btBox:after, .boldSection .port:after, .header:after, .boldRow:after, .socialRow:before, .socialRow:after, .servicesItem .sIcon:after, .boldSection:before, .boldSection:after, .psCats:after, .psWrap:after, .btTabs:after, .tabsHeader:after, .neighboringArticles:after, .articleListItem footer:after, .btPagination:after, .boldArticleBody blockquote:after, .tilesWall.classic .bgiTxt:after, .btQuoteItem:after, .boldArticleHeader .socialRow:before {
-    content: " ";
-    display: table;
-    width: 100%;
-    clear: both;
-}
 
 .mainHeader {
     background-color: #fff;
@@ -2602,20 +2596,9 @@ span.enhanced.ring {
     padding: 8px 0 8px;
 }
 
-.logo {
-    float: left;
-}
 
-.boldMenuLeft .logo {
-    margin: 0 20px 0 0;
-}
 
-.boldMenuCenter .logo {
-    position: relative;
-    z-index: 8;
-    float: left;
-    margin: 0 -100% 0 50%;
-}
+
 
 img.btMainLogo {
     height: 48px;
@@ -9760,13 +9743,6 @@ img.mfp-img {
     right: 0;
 }
 
-.logo {
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 65px;
-    width: 100px;
-}
 
 img.logoup {
     height: 55px;

@@ -1191,7 +1191,6 @@ input[type="color"]:focus{
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	z-index: 2;
 	margin: auto;
 	background: rgba(255, 255, 255, .65);
 	height: 76px;
