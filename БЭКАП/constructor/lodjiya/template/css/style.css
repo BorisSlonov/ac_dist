@@ -1,0 +1,188 @@
+@font-face{font-family:"OpenSans-Semibold";src:url("../fonts/OpenSans-Semibold.eot");src:url("../fonts/OpenSans-Semibold.eot@#iefix")format("embedded-opentype"),url("../fonts/OpenSans-Semibold.woff") format("woff"),url("../fonts/OpenSans-Semibold.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:'OpenSans-SemiboldItalic';src:url("../fonts/OpenSans-SemiboldItalic.eot");src:url("../fonts/OpenSans-SemiboldItalic.eot@#iefix")format("embedded-opentype"),url("../fonts/OpenSans-SemiboldItalic.woff") format("woff"),url("../fonts/OpenSans-SemiboldItalic.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:'OpenSans-BoldItalic';src:url("../fonts/OpenSans-BoldItalic.eot");src:url("../fonts/OpenSans-BoldItalic.eot@#iefix")format("embedded-opentype"),url("../fonts/OpenSans-BoldItalic.woff") format("woff"),url("../fonts/OpenSans-BoldItalic.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:'OpenSans-Regular';src:url("../fonts/OpenSans-Regular.eot");src:url("../fonts/OpenSans-Regular.eot@#iefix")format("embedded-opentype"),url("../fonts/OpenSans-Regular.woff") format("woff"),url("../fonts/OpenSans-Regular.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:'OpenSans-Italic';src:url("../fonts/OpenSans-Italic.eot");src:url("../fonts/OpenSans-Italic.eot@#iefix")format("embedded-opentype"),url("../fonts/OpenSans-Italic.woff") format("woff"),url("../fonts/OpenSans-Italic.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:'OpenSans-Bold';src:url("../fonts/OpenSans-Bold.eot");src:url("../fonts/OpenSans-Bold.eot@#iefix")format("embedded-opentype"),url("../fonts/OpenSans-Bold.woff") format("woff"),url("../fonts/OpenSans-Bold.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:'Roboto-CondensedItalic';src:url('../fonts/Roboto-CondensedItalic.eot');src:url('../fonts/Roboto-CondensedItalic.ttf') format('truetype'),url('../fonts/Roboto-CondensedItalic.svg#Open Sans') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Roboto-BoldCondensed';src:url('../fonts/Roboto-BoldCondensed.eot');src:url('../fonts/Roboto-BoldCondensed.ttf') format('truetype'),url('../fonts/Roboto-BoldCondensed.svg#Open Sans') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Roboto-Bold';src:url('../fonts/Roboto-Bold.eot');src:url('../fonts/Roboto-Bold.ttf') format('truetype'),url('../fonts/Roboto-Bold.svg#Open Sans') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Roboto-Regular';src:url('../fonts/Roboto-Regular.eot');src:url('../fonts/Roboto-Regular.ttf') format('truetype'),url('../fonts/Roboto-Regular.svg#Open Sans') format('svg');font-weight:normal;font-style:normal;}
+
+*{padding:0;margin:0;}
+
+#veryline p{padding-left:20px;padding-right:20px;}
+#veryline input:focus{outline:none;}
+#veryline .load{background:url("../img/load.gif") no-repeat center center;width:100%;z-index:1000000000;position:fixed;display: none}
+#veryline .clear{clear:both;}
+#veryline input[type="text"]:focus{outline:none;}
+#veryline textarea:focus{outline:none;}
+#veryline textarea{resize:none;}
+#veryline .preCalcBlock .calcBlock{width:1000px;margin:0 auto;}
+#veryline .calcTitle{width:1280px;margin:0 auto;background:url("../img/payAfter.png") no-repeat 60px 5px;height:120px;}
+#veryline .calcTitle h1{font-family:'OpenSans-Bold';color:#0271aa;text-transform:uppercase;font-size:60px;text-align:center;padding-left:245px;}
+#veryline .preCalcContentBlock{min-width:1280px;}
+#veryline .preCalcContentBlock .calcContentBlock{width:1000px;margin:0px auto;}
+#veryline .preCalcContentBlock .calcContentBlock h2{color:#db1358;font-family:"OpenSans-Bold";font-size:20px;margin-bottom:25px;text-transform:uppercase;}
+#veryline .preCalcContentBlock .calcContentBlock p{font-family:'OpenSans-Regular';color:#4f4f4f;font-size:14px;}
+#veryline .calcTitle2{width:1280px;margin:0 auto;}
+#veryline .calcTitle2 .title{font-family:'OpenSans-Bold';color:#0271aa;text-transform:uppercase;font-size:40px;text-align:center;line-height:70px;}
+#veryline .calcTitle2 .title2{font-family:'OpenSans-Bold';color:#dc024d;text-transform:uppercase;font-size:33px;text-align:center;margin-bottom:15px;}
+#veryline .calcTitle2 .descr{font-family:'OpenSans-Regular';color:#4f4f4f;font-size:18px;text-align:justify;margin-bottom: 10px;}
+#veryline .calcTitle2 .descr strong {font-family:'OpenSans-Bold';color:#4f4f4f;font-size:18px;text-align:justify;margin-bottom: 10px;}
+#veryline .calcDescr{font-family:'OpenSans-SemiboldItalic';color:#4f4f4f;font-size:14px;width:960px;margin:0 auto;}
+#veryline .preCalcForm{min-width:1280px;    background: url("../img/specialOffer.jpg") repeat-x center center;}
+#veryline .preCalcForm .calcForm{width:1000px;margin:0 auto;padding-top: 20px;}
+#veryline .preCalcForm .calcForm .title{font-family:"Arial";font-size:30px;color:#fff;margin-bottom:20px;font-weight: 900;}
+#veryline .preCalcForm .calcForm .left{float:left;width:1000px}
+#veryline .preCalcForm .calcForm .left input{width:355px;height:49px;border:3px solid #959595;border-radius:8px;margin-bottom:15px;text-align:center;font-family:"Arial";font-size:24px;color:#4f4f4f;margin-right: 30px;}
+#veryline .preCalcForm .calcForm .left input:nth-child(1){background:url("../img/inputName.png") no-repeat 13px center #fff; display: block;float: left;}
+#veryline .preCalcForm .calcForm .left input:nth-child(2){background:url("../img/inputPhone.png") no-repeat 13px center #fff; display: block;float: left;}
+#veryline .preCalcForm .calcForm .right{float:left;width:600px}
+#veryline .preCalcForm .calcForm .right textarea{width:616px;height:162px;padding:10px;border:3px solid #959595;border-radius:8px;margin-bottom:15px;text-align:left;font-family:"Arial";font-size:24px;color:#4f4f4f;}
+#veryline .preCalcForm .calcForm .bottom{}
+#veryline .preCalcForm .calcForm .bottom .descr{float:left;width:670px;margin-left:20px;margin-top:10px;}
+#veryline .preCalcForm .calcForm .bottom .descr p{font-family:"Arial";font-size:14px;color:#2b2b2b;font-style:italic;}
+#veryline .preCalcForm .calcForm .bottom .send{float:left;width:200px;margin-left:35px;}
+#veryline .preCalcForm .calcForm .submitFormCalc{display:block;border:none;background:#ffd200;width:217px;height:42px;padding-top:13px;font-family:"Arial";font-size:24px;color:#2b2b2b;border-radius:10px;cursor:pointer;text-align:center;float: right;}
+#veryline .preCalcForm .calcForm input.submitFormC{ display: block; border: none; background: #ffd200; width: 217px; height: 53px; padding-top: 5px; font-family: "Arial"; font-size: 24px; color: #2b2b2b; border-radius: 10px; cursor: pointer; text-align: center; float: right; margin-right: 0; } 
+#veryline .preCalcForm .calcForm .calcData{display:none;}
+#veryline .inetmagspisokopis p.typeWindowB{font-family:'OpenSans-Semibold';color:#4f4f4f;font-size:18px;text-transform:uppercase;margin-right:10px;}
+#veryline .otdelka h1{font-size:58px;font-weight:bold;text-align:center;margin:40px 0 35px 0;text-transform:uppercase}
+#veryline .otdelka h2{font-size:35px;font-weight:bold;text-align:center;margin:0px 0 30px 0;text-transform:uppercase;color:#f50336}
+#veryline .otdelka p{text-align:center;line-height:24px;padding:0 10px;font-size:18px}
+#veryline .kalk_otd{margin:50px 0 40px 0}
+#veryline #blkbg{position:relative;width:718px;height:882px;float:left;top:1px;margin-left:-180px}
+#veryline #blkbg.tip1{background:url('../img/balk/balk1.jpg') no-repeat left top;}
+#veryline #blkbg.tip2{background:url('../img/balk/balk2.jpg') no-repeat left top;}
+#veryline #blkbg.tip3{background:url('../img/balk/balk3.jpg') no-repeat left top;}
+#veryline #blkbg div{display:none;position:absolute;right:0px;top:0px;width:718px;height:882px;}
+#veryline #shkaf1_1, #shkaf1_2, #shkaf2_1, #shkaf2_2, #shkaf3_1, #shkaf3_2{z-index:500}
+#veryline #floor1, #floor2{z-index:400}
+#veryline .blk_item{width:360px;height:882px;float:left;}
+#veryline .blk_item h3{width:343px;height:93px;padding-top:10px;text-align:center;background:#dcdcdc;font-family:"OpenSans-Bold";font-size:36px;line-height:40px;color:#4f4f4f;text-transform:uppercase;border-radius:10px;margin:0 auto;}
+#veryline .blk_item .type1{width:343px;margin:10px auto;background:#e9e9e9;border-radius:10px;}
+#veryline .blk_item .type1 p{font-family:"OpenSans-Bold";font-size:18px;color:#0271aa;text-align:center;margin-bottom:0px;padding-top:10px;}
+#veryline .blk_item .type1 .left{background:url('type1_left.png') no-repeat left top!important;width:168px;display:block;float:left;padding:0;height:39px;margin:0;color:#fff;padding-top:8px;cursor:pointer;}
+#veryline .blk_item .type1 .left span{margin-left:45px;}
+#veryline .blk_item .type1 .left.active{background:url('type1_left_active.png') no-repeat left top!important;}
+#veryline .blk_item .type1 .right{background:url('type1_right.png') no-repeat right top!important;width:175px;display:block;float:left;padding:0;height:39px;margin:0;color:#fff;padding-top:8px;cursor:pointer;}
+#veryline .blk_item .type1 .right span{margin-right:45px;}
+#veryline .blk_item .type1 .right.active{background:url('type1_right_active.png') no-repeat right top!important;}
+#veryline .blk_item .type1 .pol2{width:343px;}
+#veryline .pol2{width:300px;margin:0 auto;}
+#veryline .pol2 .pol2Line{width:230px;margin:0 auto;background:#fff;height:33px;}
+#veryline .pol2 a{display:block;float:left;color:#000;font-size:14px;padding:50px 0 0 0}
+#veryline .pol2 span{position:relative}
+#veryline .pol2 .cent{text-align:center}
+#veryline .pol2 .left{width:90px;background:url('pol_notActive.png') no-repeat center top;margin-top:-37px;text-align:center;text-decoration:none;color:#4f4f4f;font-family:"OpenSans-Regular";font-size:14px;}
+#veryline .pol2 .cent{width:90px;background:url('pol_notActive.png') no-repeat center top;margin:0 15px;margin-top:-37px;text-align:center;text-decoration:none;color:#4f4f4f;font-family:"OpenSans-Regular";font-size:14px;}
+#veryline .pol2 .right{width:90px;background:url('pol_notActive.png') no-repeat center top;margin-top:-37px;text-align:center;text-decoration:none;color:#4f4f4f;font-family:"OpenSans-Regular";font-size:14px;}
+#veryline .pol2 .left.active{background:url('pol_active.png') no-repeat center top;}
+#veryline .pol2 .cent.active{background:url('pol_active.png') no-repeat center top;}
+#veryline .pol2 .right.active{background:url('pol_active.png') no-repeat center top;}
+#veryline .type2Block{background:#e7e7e7;border-radius:10px;width:343px;margin:0 auto;padding-top:0px;}
+#veryline .type2:nth-child(2n+2){background:#f1f1f1;}
+#veryline .type2:nth-child(2n+2) 
+#veryline .pol2Line{background:#c6c4c4;}
+#veryline .type2:last-child{background:#f1f1f1;border-radius:10px;}
+#veryline .type2Block .type2{margin:0 auto;width:343px;border-bottom:1px solid #fff;padding-bottom:10px;padding-top:10px;}
+#veryline .type2Block .type2 p{font-family:"OpenSans-Bold";font-size:18px;color:#0271aa;text-align:center;margin-bottom:5px;}
+#veryline .itog_price{background:#3423fd;width:343px;margin:0 auto;margin-top:10px;border-radius:10px;text-align:center;height:103px;padding-top:10px;}
+#veryline .itog_price .nam{font-family:"OpenSans-Bold";font-size:33px;color:#333333;}
+#veryline .itog_price span#cena{font-family:"OpenSans-Bold";font-size:46px;color:#333333;}
+#veryline .itog_price2 span{font-family: "OpenSans-Bold"; font-size: 20px; color: #fff;} 
+#veryline .itog_price2 { cursor:pointer; width: 343px; text-align: center; margin: 0 auto; margin-top: 10px; position: relative; font-weight: bold; color: white; text-decoration: none; text-shadow: 0 -1px 1px #cc5500; padding: 11px 0px; user-select: none; outline: none; border-radius: 1px; background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31); background-size: 100% 100%, auto; background-position: 50% 50%; box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px; transition: 0.2s; } 
+#veryline .itog_price2:active {color: #ffdead;box-shadow: inset #ebab00 0 0px 0px, inset 0 0px 0px #ffbf00, #cc7722 0 0 0 0px, 0 0px 0px 0px #000;}
+.nam, #cena{color:#fff !important;}
+.minus, .plus {cursor:pointer; }
+.number{
+    margin-left: 27px;
+    font-weight: bold;
+}
+.number input{
+    padding: 5px 10px;
+    width: 75px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+.infor{
+    padding-right: 35px;
+}
+
+
+.infor{
+    text-align: center;
+    text-decoration: none;
+    color: #4f4f4f;
+    font-family: "OpenSans-Regular";
+  ` font-weight: bold;
+    font-size: 15px;
+
+}
+
+
+
+@media all and (max-width: 1100px) {
+    #veryline .preCalcBlock .calcBlock {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    #veryline .kalk_otd {
+        margin: 20px 0;
+    }
+    #veryline #blkbg {
+        width: 100%;
+        float: none;
+        margin: 0;
+        height: 410px;
+        background-size: 100%!important;
+        overflow: hidden;
+    }
+    #veryline #blkbg div {
+        width: 100%;
+        height: 100%;
+    }
+    #veryline #blkbg div img {
+        width: 100%;
+    }
+    #veryline .blk_item {
+        width: 100%;
+        float: none;
+        height: 300px;
+        margin: 10px 0 0;
+    }
+    #veryline .blk_item h3 {
+        width: 100%;
+        font-size: 22px;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #veryline .blk_item .type1 {
+        width: 100%;
+    }
+    #veryline .pol2 {
+        width: 100%!important;
+    }
+    #veryline .type2Block {
+        width: 100%;
+    }
+    #veryline .type2Block .type2 {
+        width: 100%!important;
+        margin: 5px 0;
+    }
+    #veryline .itog_price {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    #veryline .itog_price .nam {
+        font-size: 19px;
+    }
+    #veryline .itog_price span#cena {
+        font-size: 28px;
+    }
+}

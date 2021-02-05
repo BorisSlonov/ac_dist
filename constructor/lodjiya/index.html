@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" href="template/css/style.css" />
+    <script src="template/js/jquery-1.8.3.min.js"></script>
+    <script src="template/js/jquery.main.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="veryline">
+        <div class="preCalcBlock">
+            <div class="calcBlock calcBlockBalc">
+                <div class="kalk_otd">
+                    <div id="blkbg" class="tip1">
+                        <div id="teplo1_1"><img src="template/img/balk/balk1_teplo.png" alt=""></div>
+                        <div id="roof1_1"><img src="template/img/balk/roof_1_1.png" alt=""></div>
+                        <div id="roof1_2"><img src="template/img/balk/roof_1_2.png" alt=""></div>
+                        <div id="roof1_3"><img src="template/img/balk/roof_1_3.png" alt=""></div>
+                        <div id="roof1_4"><img src="template/img/balk/roof_1_4.png" alt=""></div>
+
+                        <div id="shkaf1_1"><img src="template/img/balk/shkaf_2_1.png" alt=""></div>
+                        <div id="shkaf1_2"><img src="template/img/balk/shkaf_1_2.png" alt=""></div>
+                        <div id="shkaf2_1"><img src="template/img/balk/shkaf_2_1.png" alt=""></div>
+                        <div id="shkaf2_2"><img src="template/img/balk/shkaf_2_2.png" alt=""></div>
+                        <div id="shkaf3_1"><img src="template/img/balk/shkaf_2_1.png" alt=""></div>
+                        <div id="shkaf3_2"><img src="template/img/balk/shkaf_3_2.png" alt=""></div>
+                        
+                        <div id="floor1" style="display: block;"><img src="template/img/balk/floor1.png" alt=""></div>
+                        <div id="floor2"><img src="template/img/balk/floor2.png" alt=""></div>
+                        
+                        <div id="ceiling1" style="display: block;"><img src="template/img/balk/ceiling1.png" alt=""></div>
+                        <div id="ceiling2"><img src="template/img/balk/ceiling2.png" alt=""></div>
+                        <div id="ceiling3"><img src="template/img/balk/ceiling3.png" alt=""></div>
+                    </div>
+
+                    <div id="parametri" class="blk_item">
+                        <h3>Параметры отделки</h3>
+                        <div class="type1">
+                            <p>Тип остекления:</p>
+                            <div id="steklo1" class="pol2 tipstek">
+                                <a href="#" id="stek1" class="winType left active" data-price="0" data-show="#teplo1_1"><span>Холодное</span></a>
+                                <a href="#" id="stek2" class="winType right " data-price="0" data-show="#teplo1_1"><span>Теплое</span></a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+                        <div class="type2Block">
+
+                            <div class="type2" style="width: 250px;">
+                                <p>Крыша:</p>
+                                <div id="steklo2" class="pol2 roof" style="width: 250px;">
+                                    <div class="pol2Line" style="width: 150px;"></div>
+                                    <a href="#" id="roof1" style="margin-left: 15px;" class="roofType left active" data-price="0"><span>Без крыши</span></a>
+                                    <a href="#" id="roof2" style="margin-left: 38px;" class="roofType right " data-price="3480"><span>Профлист</span></a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="type2">
+                                <p>Материл отделки:</p>
+                                <div id="steklo3" class="pol2 mat">
+                                    <div class="pol2Line"></div>
+                                    <a href="#" id="otdType1" class="left otdType active" data-price="22755"><span>ПВХ панели</span></a>
+                                    <a href="#" id="otdType2" class="cent otdType" data-price="19955"><span>Сэндвич-панель</span></a>
+                                    <a href="#" id="otdType3" class="right otdType" data-price="25100"><span>Вагонка</span></a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+
+                            <div class="type2">
+                                <p>Шкаф на балкон:</p>
+                                <div id="steklo4" class="pol2 shkaf">
+                                    <div class="pol2Line"></div>
+                                    <a href="#" id="shkafType1" class="left shkafType active" data-price="0"><span>Нет</span></a>
+                                    <a href="#" id="shkafType2" class="cent shkafType" data-price="21000"><span>Купе</span></a>
+                                    <a href="#" id="shkafType3" class="right shkafType" data-price="15000"><span>Распашной</span></a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            
+                             <div class="type2">
+                                <p>Тип потолка:</p>
+                                <div id="steklo6" class="pol2 ceiling">
+                                    <div class="pol2Line"></div>
+                                    <a id="ceilingType1" href="#" class="ceiling left active" data-price="7450"><span>Вагонка</span></a>
+                                    <a id="ceilingType2" href="#" class="ceiling cent" data-price="5015"><span>ПВХ панели</span></a>
+                                    <a id="ceilingType3" href="#" class="ceiling right" data-price="6600"><span>Сэндвич-панель</span></a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+
+                            <div class="type2">
+                                <p>Тип пола:</p>
+                                <div id="steklo5" class="pol2 floor">
+                                    <div class="pol2Line"></div>
+                                    <a id="floorType1" href="#" class="florType left active" data-price="3820"><span>Линолиум</span></a>
+                                    <a id="floorType2" href="#" class="florType cent" data-price="7873"><span>Плитка керамическая</span></a>
+                                    <a id="floorType3" href="#" class="florType right" data-price="3539"><span>Половой Шпунт</span></a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="itog_price">
+                            <span class="nam">ИТОГО:</span>
+                            <span id="cena">28920</span>
+							<span class="nam">р</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

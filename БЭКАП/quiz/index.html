@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Ремонт кварир в Москве</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<section id="wizard"> 
+<div class="container">
+    <div class="row">
+            <div class="wizard">
+                <div class="wizard-inner">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#step1" data-toggle="tab" aria-controls="step1" role="tab"></a></li>
+                       <!--  <li class="disabled"><a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"></a></li> -->
+                        <li class="disabled"><a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"></a></li>
+                        <li class="disabled"><a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"></a></li>
+                        <!-- <li class="disabled"><a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"></a></li> -->
+                        <li class="disabled"><a href="#step6" data-toggle="tab" aria-controls="step6" role="tab"></a></li>
+                        <li class="disabled"><a href="#complete" data-toggle="tab" aria-controls="complete" role="tab"></a></li>
+                    </ul>
+                </div>
+
+                <form role="form" id="wizard-form">
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="step1">
+                            <div class="wizard-flex">
+                                <div class="left-side-wizard">
+                                    <h3>Где нужно сделать ремонт?</h3>
+                                    <div class="header-wizard">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">25%</div>
+                                        </div>
+                                        <div class="numeric-quest">1-й вопрос из 4</div>
+                                    </div>
+                                    <div class="owl-carousel"> 
+                                        <div>
+                                            <div class="wizard-box">
+                                                <div class="main-checkbox">
+                                                    <input type="radio" name="level1" value="В новостройке" id="level1_1">
+                                                    <label class="control-label" for="level1_1">
+														<img src="img/level1-1.jpg" alt="">
+                                                        <span>В новостройке</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="wizard-box">
+                                                <div class="main-checkbox">
+                                                    <input type="radio" name="level1" value="В современном доме" id="level1_2">
+                                                    <label class="control-label" for="level1_2">
+                                                        <img src="img/level1-2.jpg" alt="">
+                                                        <span>В коттедже</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="wizard-box">
+                                                <div class="main-checkbox">
+                                                    <input type="radio" name="level1" value="В старом доме" id="level1_3">
+                                                    <label class="control-label" for="level1_3">
+                                                        <img src="img/level1-3.jpg" alt="">
+                                                        <span>Вторичное жилье</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wizard-btns">
+                                        <button type="button" class="wizard-btn wizard-main-btn pull-right next-step">
+                                            <i class="mdi mdi-checkbox-marked-circle-outline"></i>
+                                            <span class="ink animate"></span>
+                                            Продолжить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="right-side-wizard">
+                                    <div class="wizard-manager">
+                                        <img src="img/work.jpg" alt="">
+                                        <div class="manager-name">Олег Павлов</div>
+                                        <div class="manager-status">Специалист по ремонту</div>
+                                    </div>
+                                    <div class="wizard-manager-text">
+                                        <p>Тип дома напрямую влияет на стоимость ремонта. В новостройках стоимость ремонта как правило ниже, так как не нужно учитывать стоимость демонтажа старой отделки. В новых домах в смету закладывается помимо ремонтных работ демонтаж старой отделки. В старых домах в смете учитывается больше материалов на черновую отделку из-за неровных стен и потолков. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<div class="tab-pane" role="tabpanel" id="step3">
+                            <div class="wizard-flex">
+                                <div class="left-side-wizard">
+                                    <h3>Какой площади помещение, где планируете делать ремонт?</h3>
+                                    <div class="header-wizard">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">50%</div>
+                                        </div>
+                                        <div class="numeric-quest">2-й вопрос из 4</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="text" class="wizard-input" placeholder="Площадь, м2" name="level3">
+                                        </div>
+                                    </div>
+                                    <div class="wizard-btns">
+                                        <button type="button" class="wizard-btn pull-left prev-step">
+                                            <i class="mdi mdi-arrow-left"></i>
+                                            Вернутся
+                                        </button>
+                                        <button type="button" class="wizard-btn wizard-main-btn pull-right next-step">
+                                            <i class="mdi mdi-checkbox-marked-circle-outline"></i>
+                                            <span class="ink animate"></span>
+                                            Продолжить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="right-side-wizard">
+                                    <div class="wizard-manager">
+                                        <img src="img/work.jpg" alt="">
+                                        <div class="manager-name">Олег Павлов</div>
+                                        <div class="manager-status">Специалист по ремонту</div>
+                                    </div>
+                                    <div class="wizard-manager-text">
+                                        <p>Площадь влияет на количество необходимого материала, и, как следует, на стоимость</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+						<div class="tab-pane" role="tabpanel" id="step4">
+                            <div class="wizard-flex">
+                                <div class="left-side-wizard">
+                                    <h3>Какого формата нужен ремонт?</h3>
+                                    <div class="header-wizard">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">75%</div>
+                                        </div>
+                                        <div class="numeric-quest">3-й вопрос из 4</div>
+                                    </div>
+                                    <div class="owl-carousel">
+                                        <div>
+                                            <div class="wizard-box">
+                                                <div class="main-checkbox">
+                                                    <input type="radio" name="level4" value="Эконом" id="level4_1">
+                                                    <label class="control-label" for="level4_1">
+                                                        <img src="img/level4-3.jpg" alt="">
+                                                        <span>Эконом</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="wizard-box">
+                                                <div class="main-checkbox">
+                                                    <input type="radio" name="level4" value="Стандарт" id="level4_2">
+                                                    <label class="control-label" for="level4_2">
+                                                        <img src="img/level4-2.jpg" alt="">
+                                                        <span>Стандарт</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="wizard-box">
+                                                <div class="main-checkbox">
+                                                    <input type="radio" name="level4" value="Бизнес" id="level4_3">
+                                                    <label class="control-label" for="level4_3">
+                                                        <img src="img/level4-1.jpg" alt="">
+                                                        <span>Бизнес</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wizard-btns">
+                                        <button type="button" class="wizard-btn pull-left prev-step">
+                                            <i class="mdi mdi-arrow-left"></i>
+                                            Вернутся
+                                        </button>
+                                        <button type="button" class="wizard-btn wizard-main-btn pull-right next-step">
+                                            <i class="mdi mdi-checkbox-marked-circle-outline"></i>
+                                            <span class="ink animate"></span>
+                                            Продолжить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="right-side-wizard">
+                                    <div class="wizard-manager">
+                                        <img src="img/work.jpg" alt="">
+                                        <div class="manager-name">Олег Павлов</div>
+                                        <div class="manager-status">Специалист по ремонту</div>
+                                    </div>
+                                    <div class="wizard-manager-text">
+                                        <p> В целом, стилистика ремонта не самым прямым образом влияет на его стоимость, однако лофт как правило дешевле, чем хайтек, а материалы, используемые в отделке в стиле арт-деко дороже, чем в классическом стиле. Поэтому, если вы на этом шаге укажите желаемый стиль, смета получится более точной. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="tab-pane" role="tabpanel" id="step6">
+                            <div class="wizard-flex">
+                                <div class="left-side-wizard">
+                                    <h3>Выберите вашу скидку?</h3>
+                                    <div class="header-wizard">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">100%</div>
+                                        </div>
+                                        <div class="numeric-quest">4-й вопрос из 4</div>
+                                    </div>
+                                    <div class="owl-carousel"> 
+                                        <div>
+                                            <div class="wizard-box">
+                                                <div class="main-checkbox">
+                                                    <input type="radio" name="level6" value="Скидка 10% на работы" id="level6_1">
+                                                    <label class="control-label" for="level6_1">
+                                                        <img src="img/level6-1.jpg" alt="">
+														<span>Скидка 10% на работы</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="wizard-box">
+                                                <div class="main-checkbox">
+                                                    <input type="radio" name="level6" value="Скидка 15% на материал" id="level6_2">
+                                                    <label class="control-label" for="level6_2">
+                                                       <img src="img/level6-2.jpg" alt="">
+														<span>Скидка 15% на материал</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+										<div>
+                                            <div class="wizard-box">
+                                                <div class="main-checkbox">
+                                                    <input type="radio" name="level6" value="Скидка 5% на чистовой материал" id="level6_3">
+                                                    <label class="control-label" for="level6_3">
+                                                       <img src="img/level6-3.jpg" alt="">
+														<span>Скидка 5% на чистовой материал</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wizard-more-mouse">
+                                        <div class="wizard-mouse">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <span>Возможна прокрутка</span>
+                                    </div>
+                                    <div class="wizard-btns">
+                                        <button type="button" class="wizard-btn pull-left prev-step">
+                                            <i class="mdi mdi-arrow-left"></i>
+                                            Вернутся
+                                        </button>
+                                        <button type="button" class="wizard-btn wizard-main-btn pull-right next-step">
+                                            <i class="mdi mdi-checkbox-marked-circle-outline"></i>
+                                            <span class="ink animate"></span>
+                                            Продолжить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="right-side-wizard">
+                                    <div class="wizard-manager">
+                                        <img src="img/work.jpg" alt="">
+                                        <div class="manager-name">Олег Павлов</div>
+                                        <div class="manager-status">Специалист по ремонту</div>
+                                    </div>
+                                    <div class="wizard-manager-text">
+                                        <p>Если у вас есть дизайн-проект, мы сможем максимально точно посчитать стоимость ремонта. Если его ещё нет, мы отдельно сделаем его расчёт для вас. При некоторых условиях, это даже может быть бесплатно!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+                        <div class="tab-pane wizard-finish-tab" role="tabpanel" id="complete">
+                            <div class="wizard-flex">
+                                <div class="left-side-wizard">
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-2 text-center">
+                                            <i class="mdi mdi-check-circle-outline"></i>
+                                            <h3>Отлично. Последний шаг!</h3>
+                                            <div class="after-h3">Заполните форму ниже и наши менеджеры отправят вам персональное предложение в ближайшее время</div>
+                                            <input type="text" class="wizard-input" placeholder="Имя" name="name" required>
+                                            <input type="text" class="wizard-input phone-mask" placeholder="Телефон" name="phone" required>
+                                            <input type="hidden" value="Новая заявка с теста" name="formData">
+                                            <button type="submit" class="wizard-btn wizard-main-btn">
+                                                <i class="mdi mdi-checkbox-marked-circle-outline"></i>
+                                                <span class="ink animate"></span>
+                                                Получить предложение
+                                            </button>
+                                            <div class="personal-info">Предоставляя ваши контактные данные, вы соглашаетесь на обработку персональной информации в соотвествии с
+                                                <a href="#modal-privacy" data-toggle="modal">политикой конфиденциальности</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+    </div>
+</div>
+</section>
+
+
+<div id="modal-order" class="modal fade" role="dialog">
+    <div class="modal-dialog call_modal">
+        <div class="modal-content">
+            <form id="form-order">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Оформить заказ</h4>
+                    <p class="after-modal-title text-center">Оставьте свои данные и наши менеджеры свяжутся с вами для уточнения деталей</p>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Ваш E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" class="form-control phone-mask" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <input type="hidden" name="formData" value="Оформление заказа">
+                    <button type="submit" class="btn main-btn form-btn">Перезвоните мне</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="modal-call" class="modal fade" role="dialog">
+    <div class="modal-dialog call_modal">
+        <div class="modal-content">
+            <form id="form-call">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Заказать обратный звонок</h4>
+                    <p class="after-modal-title">Оставьте свой номер телефона и наши менеджеры свяжутся с вами в ближайшее время</p>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" name="phone" class="wizard-input phone-mask" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <input type="hidden" name="formData" value="Заказ обратного звонка">
+                    <button type="submit" class="wizard-btn wizard-main-btn form-btn">Перезвоните мне</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="modal-privacy" class="modal fade" role="dialog">
+    <div class="modal-dialog privacy_modal modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Политика конфиденциальности</h4>
+            </div>
+            <div class="modal-body">
+                <div class="privacy_text">
+                    <h4>1.Сбор информации</h4>
+                    <p>Мы собираем информацию, когда вы регистрируетесь на сайте, заходите на свой аккаунт, совершаете покупку,
+                        участвуете в акции и/или выходите из аккаунта. Информация включает ваше имя, адрес электронной почты,
+                        номер телефона и данные по кредитной карте. Кроме того, мы автоматически регистрируем ваш компьютер и
+                        браузер, включая IP, ПО и аппаратные данные, а также адрес запрашиваемой страницы.</p>
+                    <h4>2. Использование информации</h4>
+                    <p>Информация, которую мы получаем от вас, может быть использована, чтобы:
+                    </p><ul>
+                    <li>Сделать услуги соответствующими вашим индивидуальным запросам</li>
+                    <li>Предложить персонализированную рекламу</li>
+                    <li>Улучшить наш сайт</li>
+                    <li>Улучшить систему поддержки пользователей</li>
+                    <li>Связаться с вами по электронной почте</li>
+                    <li>Устроить акцию, конкурс или организовать исследование</li>
+                </ul>
+                    <p></p>
+                    <h4>3. Защита личных данных при онлайн-продажах</h4>
+                    <p>Мы являемся единственным владельцем информации, собранной на данном сайте. Ваши личные данные не будут
+                        проданы или каким-либо образом переданы третьим лицам по каким-либо причинам, за исключением необходимых
+                        данных для выполнения запроса или транзакции, например, при отправке заказа.</p>
+                    <h4>4. Раскрытие информации третьим лицам</h4>
+                    <p>Мы не продаем, не обмениваем и не передаем личные данные сторонним компаниям. Это не относится к надежным
+                        компаниям, которые помогают нам в работе сайта и ведении бизнеса при условии, что они соглашаются сохранять
+                        конфиденциальность информации.</p>
+                    <p>Мы готовы делиться информацией, чтобы предотвратить преступления или помочь в их расследовании, если речь
+                        идет о подозрении на мошенничество, действиях, физически угрожающих безопасности людей, нарушениях правил
+                        использования или в случаях, когда это предусмотрено законом.</p>
+                    <p>Неконфиденциальная информация может быть предоставлена другим компаниям в целях маркетинга, рекламы и т.д.</p>
+                    <h4>5. Защита информации</h4>
+                    <p>Мы используем различные средства безопасности, чтобы гарантировать сохранность ваших личных данных. К вашим
+                        услугам самое современное шифрование. VpnMentor также защищает ваши данные в режиме оффлайн. Только те
+                        сотрудники, которые работают с конкретным заданием (например, техническая поддержка или проведение оплаты)
+                        получают доступ к личным данным. Сервера и компьютеры, на которых записана конфиденциальная информация,
+                        находятся в безопасном окружении.</p><p>
+                    <b>Использование файлов «cookie»</b>
+                </p><p>Наши файлы «cookie» используются для улучшения доступа к сайту и определения повторных посещений. Кроме того,
+                    они позволяют отследить наиболее интересующие запросы. Файлы «cookie» не передают никакую конфиденциальную информацию.</p>
+                    <h4>6. Отказ от подписки</h4>
+                    <p>Мы используем электронную почту, чтобы предоставить вам информацию по вашему заказу, новостям компании,
+                        информации по продуктам и т.д. Если вы желаете отказаться от подписки, в каждом письме даны подробные
+                        инструкции, как вы можете это сделать.</p>
+                    <h4>7. Согласие</h4>
+                    <p>Пользуясь услугами нашего сайта, вы автоматически соглашаетесь с нашей политикой конфиденциальности.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-thank" class="modal fade" role="dialog">
+    <div class="modal-dialog call_modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Спасибо!</h4>
+                <p class="after-modal-title">Благодарим вас за оформление заявки. Наши менеджеры свяжутся с вами в ближайшее время</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

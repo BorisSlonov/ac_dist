@@ -1,0 +1,10 @@
+html, 
+body { height: 100%; min-height: 100%; margin: 0;padding: 0; }
+html *{margin: 0;padding: 0; box-sizing:border-box; -moz-box-sizing:border-box;}
+
+.colh {color: #fff;font-weight: bold;}
+.colh h1, .colh h2{font-family: 'helvetica neue','HelveticaNeue','Helvetica-Neue',Helvetica,Arial,sans-serif;}
+.colh h1{font-size: 40px;font-weight: bold;}
+.colh h2{font-size: 35px;}
+.bantel{background:#516a23;color: #fff;}
+.fontel a{font-size: 20px;}

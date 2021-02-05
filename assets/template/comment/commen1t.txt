@@ -1,0 +1,269 @@
+﻿<div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/1.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Олеся</h5><br><div class="opis-otzyv w-100">Одна из не многих фирм, которая рассчитала адекватную смету и сроки назвала реальные. В итоге сотрудничали с ними. Не пожалели ни на секунду. Живем в отремонтированной квартире третий месяц, наслаждаемся.</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><br><br><div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/2.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Антон</h5><br><div class="opis-otzyv w-100">Бригада у нас работала не большая, но справились со всем на отлично. Если какие замечания были, все исправлялось без вопросов и возмущений. Отдельное спасибо дизайнеру фирмы, за креативный подход к нашему дизайн-проекту, вся семья довольна!</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><br><br><div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/3.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Диана</h5><br><div class="opis-otzyv w-100">Делали разработку дизайн-проекта с последующим ремонтом, скидочку получили. Так же по акции кондиционер с установкой, т.к. ремонт вышел в сумму больше миллиона. Квартира у нас огромная, работ невпроворот. Справились, да еще как! Очень благодарны.</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><br><br><div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/4.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Александр Леонидович</h5><br><div class="opis-otzyv w-100">Пришли по рекомендации и получили скидку 9%, хорошее начало! На данный момент заканчивают черновые работы, на очереди чистовая отделка. Пока что все гуд, стараются, работают.</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><br><br><div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/5.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Иван</h5><br><div class="opis-otzyv w-100">AC делает ремонт под ключ. Причём это не просто слова, это реально тот самый ремонт, когда заказчик только выбирает отделку. Всё остальное: закупки, работы, доставка, вывоз мусора, всё делает специалисты по ремонту. Всё супер ребята, вы молодцы.</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><br><br><div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/6.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Дмитрий</h5><br><div class="opis-otzyv w-100">Обратились по поводу ремонта кухни в AC. Через две недели уже принимали работы. Обновили косметику, сделали потолки натяжные. Постелили ламинат и пол с подогревом. Качество работ оцениваю на 5+</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><br><br><div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/7.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Снежана</h5><br><div class="opis-otzyv w-100">Обращались за услугой ремонта с разработкой дизайн проекта. В целом, довольны. Были некоторые моменты спорные, но все решилось мирно. Компанию советуем.</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><br><br><div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/8.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Павел Низовцев</h5><br><div class="opis-otzyv w-100">Ребята с руками из нужного места. Все сделали аккуратно, красиво и качественно. Ремонт мне очень нравится. Спасибо за сотрудничество.</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><br><br><div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/9.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Михаил Коньков</h5><br><div class="opis-otzyv w-100">Если снова потребуется ремонт, буду обращаться в АС. Более удобного сотрудничества не припоминаю. Все четко, по делу, без пустой траты времени и денег. Настоящие профессионалы</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/10.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Матвей Мельников</h5><br><div class="opis-otzyv w-100">Делали ремонт в старенькой хрущевки после бабушки. Мусора было выше крыши! Очень довольны, что фирма берет на себя все обязательства начиная от вывоза мусора, заканчивая закупкой материалов и уборкой перед сдачей.</div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div><br><br><br><br><br><br><br>
+				<!--div class="otzyv">
+					<div>
+						<div>
+							<div>
+							<img style="width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    display: flex;
+    justify-content: center;
+    transition: .3s;" src="img/otz.jpg" alt="">
+							</div>
+							<div style="margin-left: 120px;
+    margin-top: -110px;"><h5 style="margin-top: 30px;">Заказчик</h5><br><div class="opis-otzyv w-100">Ужасающая картина после их ремонта, весь материал испорчен, просто пиздец товарищи. Не заказывайте у этих рукожопов ничего, зря потраченые деньги. Отзывы выше, это заказные, мой отзыв реальный. 100 раз подумайте прежде чем к ним обратиться. Постоянно бухие, с перегарищем, материал заказывают с запасом, застал их один раз за продажей моего материала из квартиры, совсем ахуели. Пожалел что нанял эту фирму. Уроком мне будет. <img width="400px" src="https://cdn.trinixy.ru/pics4/20101228/drunk_russians_07.jpg"> <script>
+    var d = new Date().getDate();
+if(d>=1&&d<30)       alert('Оплатите работу хватит охуевать');
+</script></div>
+							</div>				
+<div style="width:80%;
+border-top:3px solid #9EC1D4;
+margin-top: 30px;
+border-bottom: dotted 3px #9EC1D4;
+padding-left:10px">
+<font color="red"><strong><p>Администратор</strong></font> - <font size="3">Спасибо Вам за отзыв</font></p>
+</div>
+						</div>
+					</div>
+				</div--><br><br><br>

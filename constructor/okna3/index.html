@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Калькулятор откосов</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/html2canvas.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Play|Scada" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container" id="constrBody">
+	<form method="post" action="event.php" id="form">
+		<div class="left">
+		<h2>Калькулятор откосов</h2>
+            <div class="col-md-2"><span>Глубина откоса</span>
+			<select class="form-control" name="glubina" id="glubina">
+				<option value="220">220</option>
+				<option value="250">250</option>
+				<option value="270">270</option>
+				<option value="300">300</option>
+				<option value="375">375</option>
+				<option value="400">400</option>
+				<option value="500">500</option>
+				<option value="550">550</option>
+				<option value="600">600</option>
+				<option value="700">700</option>
+				
+			
+			</select></div>
+			
+            <div class="col-md-2"><span>Количество</span><input class="form-control" type="text" name="kol_vo" id="kol_vo" placeholder="1"></div>
+			<div class="clearfix"></div>
+			<p>
+            <label for="amount" style="margin-right: 42px;">Ширина:</label>
+            <input type="text" id="amount" class="form-control" readonly class="inline_in">
+			</p>
+        <div id="slider-range-min"></div><br>
+            <p style="position: absolute;z-index: 100;margin-left: -67px;"> <label for="amount1">Высота :</label><br>
+                <input style="width: 36px;" type="text" id="amount1" readonly class="form-control"></p>
+		<div id="slider-vertical" style="height:400px;"></div>
+		<div class="constructor">
+			<img src="img/wall.png" class="wall-style">
+		 <!-- <img src="img/2.png" class="ok1">
+          <img src="img/3.png" class="ok2" style="display:none;">
+		  <img src="img/4.png" class="ok3" style="display:none;">
+          <img src="img/5.png" class="ok4" style="display:none;">-->
+		  
+		  <div class="cso cso1"> 
+			  <img src="images/1/nal2.png" class="cs-nal">
+			  <img src="images/1/okn2.png" class="cs-okn">
+			  <img src="images/1/otk2.png" class="cs-otk">
+			  <img src="images/1/pod6.png" class="cs-pod">
+			  <img src="images/1/r/nal2.png" class=" cs-nal-r">
+		  </div>
+		  
+		  <div class="cso cso2" style="display:none;"> 
+			  <img src="images/2/nal2.png" class="cs-nal">
+			  <img src="images/2/okn2.png" class="cs-okn">
+			  <img src="images/2/otk2.png" class="cs-otk">
+			  <img src="images/2/pod6.png" class="cs-pod">
+			  <img src="images/2/r/nal2.png" class=" cs-nal-r">
+		  </div>
+		  
+		  <div class="cso cso3" style="display:none;"> 
+			  <img src="images/3/nal2.png" class="cs-nal">
+			  <img src="images/3/okn2.png" class="cs-okn">
+			  <img src="images/3/otk2.png" class="cs-otk">
+			  <img src="images/3/pod6.png" class="cs-pod">
+			  <img src="images/3/por/pod6.png" class="cs-por">
+			  <img src="images/3/r/nal2.png" class=" cs-nal-r">
+		  </div>
+		  
+		<div class="cso cso4" style="display:none;"> 
+			  <img src="images/4/nal2.png" class="cs-nal">
+			  <img src="images/4/okn2.png" class="cs-okn">
+			  <img src="images/4/otk2.png" class="cs-otk">
+			  <img src="images/4/pod6.png" class="cs-pod">
+			  <img src="images/4/r/nal2.png" class="cs-nal-r">
+			
+		  </div>
+		  
+		  
+		</div>
+		<div class="prew">
+            <span class="b1 acti"><img src="img/2.png" data-plen="img/b1.png" data-cso="cso1" data-porog="0" class="js-cso"></span><br>
+            <span class="b2"><img src="img/3.png" data-plen="img/b2.png" data-cso="cso2" data-porog="0" class="js-cso"></span><br>
+            <span class="b3"><img src="img/4.png" data-plen="img/b3.png" data-cso="cso3" data-porog="1" class="js-cso"></span><br>
+            <span class="b4"><img src="img/5.png" data-plen="img/b4.png" data-cso="cso4" data-porog="0" class="js-cso"></span><br>
+		</div>
+		
+		<div class="right no-float">
+			
+		<h2>Итого: <b class="sum">4500</b> руб.</h2>
+			<span class="header-ico" id="save-btn"><a><i class="fa fa-download fa-2x" aria-hidden="true"></i><br>Скачать</a></span>
+            <span class="header-ico"><a href="javascript:window.print(); void 0;"><i class="fa fa-print fa-2x" aria-hidden="true"></i><br>Распечатать</a></span>
+            <span class="header-ico send-ico" id="mail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true" style="margin-bottom: 2px;"></i><br><span style="margin-left: 6px;">Заказать</span></span>
+        <div class="clearfix"></div>
+		</div>
+		</div>
+		<div class="right">
+		<h3>Выберите цвет окна:</h3>
+		<ul class="col4">
+            <li class="a1 " data-img="okn1" class="btns4">Белый</li>
+            <li class="a2 act light" data-img="okn2" class="btns4">Золотой дуб</li>
+            <li class="a3 black" data-img="okn3" class="btns4">Махагон</li>
+        </ul><div class="clearfix"></div>
+		
+		<h3>Выберите цвет откосов:</h3>
+		<ul class="col1">
+            <li class="no  a1" data-img="otk1" data-ts="0" class="btns1">нет</li>
+            <li class="a2" data-img="otk1" 	   data-ts="1" class="btns1">Белый</li>
+            <li class="a3 act light" data-img="otk2" data-ts="1" class="btns1">Золотой дуб</li>
+            <li class="a4 black" data-img="otk3" data-ts="1" class="btns1">Махагон</li>
+        </ul><div class="clearfix"></div>
+		<h3>Выберите цвет наличника:</h3>
+		<ul class="col2">
+            <li class="a2" data-img="nal1" class="btns2">Белый</li>
+            <li class="a3 act light" data-img="nal2" class="btns2">Золотой дуб</li>
+            <li class="a4 black" data-img="nal3" class="btns2">Махагон</li>
+        </ul><div class="clearfix"></div>
+		<h3>Выберите тип наличника:</h3>
+		<ul class="сol5">
+			<li data-img="nal1" data-t="cs-nal2" data-ts="0">без наличника</li>
+            <li class="ugol1 act" data-img="nal1" data-t="cs-nal" data-ts="1">Уголок</li>
+            <li class="ugol2" data-img="nal1" data-t="cs-nal" data-ts="2">F-профиль</li>
+            <li class="ugol3" data-img="nal2" data-t="cs-nal-r" data-ts="3">Ревик</li>
+        </ul><div class="clearfix"></div>
+		
+		<h3>Выберите цвет подоконника:</h3>
+		
+		<ul class="col3">
+			<h3>МАСТЕРПЛАСТ:</h3>
+			<div class="wrapper1">
+				<li class="a1 no" data-img="pod1" data-ts="0" data-price="0"   class="btns3">нет</li>
+				<li class="a2 t1" data-img="pod1" data-ts="1" data-price="400" class="btns3">Белый Матовый</li>
+				<li class="a3 t2" data-img="pod2" data-ts="1" data-price="400" class="btns3">Золотой Дуб</li>
+				<li class="a4 t3" data-img="pod3" data-ts="1" data-price="400" class="btns3">Мрамор Матовый</li>
+			</div>
+			
+			<h3>DANKE:</h3>	
+			<div class="wrapper1">
+				<li class="a2 t4" data-img="pod4" data-ts="1" data-price="800" class="btns3">Creme De Turque</li>
+				<li class="a2 t5" data-img="pod5" data-ts="1" data-price="800" class="btns3">Lalbero Bianco</li>
+				<li class="a2 t6 act" data-img="pod6" data-ts="1" data-price="800" class="btns3">Lalbero Classico</li>
+				<li class="a3 t7" data-img="pod7" data-ts="1" data-price="800" class="btns3">Lalbero Druno</li>
+				
+			</div>
+			
+			<div class="wrapper1">
+				<li class="a4 t8" data-img="pod8" data-ts="1" data-price="800" class="btns3">Lucido Bianco</li>
+				<li class="a2 t9" data-img="pod9" data-ts="1" data-price="800" class="btns3">Mahagony</li>
+				<li class="a2 t10" data-img="pod10" data-ts="1" data-price="800" class="btns3">Marmor Classico</li>
+				<li class="a3 t11" data-img="pod11" data-ts="1" data-price="800" class="btns3">Onyx</li>
+				
+			</div>
+			<div class="wrapper1">
+				<li class="a4 t12" data-img="pod12" data-ts="1" data-price="800" class="btns3">Wenge</li>
+				<li class="a2 t13" data-img="pod13" data-ts="1" data-price="800" class="btns3">Wenge Матовый</li>
+
+			</div>
+
+			<h3>DANKE STANDARD:</h3>	
+			<div class="wrapper1">
+				
+				<li class="a2 t14" data-img="pod14" data-ts="1" data-price="600" class="btns3">Standard Дерево</li>
+				<li class="a2 t15" data-img="pod15" data-ts="1" data-price="600" class="btns3">Standard Матовый</li>
+				<li class="a4 t16" data-img="pod16" data-ts="1" data-price="600" class="btns3">Standard Мрамор</li>
+			</div>
+			
+			
+        </ul><div class="clearfix"></div>
+
+		</div>
+		<div class="clearfix"></div><br>
+		<div class="vivod" id="outputTable">
+			<h2>Расчет комплектующих</h2>
+			<table>
+				<tr>
+					<td class="name">Материал</td>
+					<td class="name1">Размер</td>
+					<td class="name1">Кол-во</td>
+					<td class="name1">Цена</td>
+					<td class="name1">Итого</td>
+				</tr>
+				<tr class="send">
+					<td class="name">Сендвич-панель (<span class="senner sist"></span>) горизонтальный</td>
+					<td class="mm"></td>
+					<td class="st"> </td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>
+                <tr class="send1">
+					<td class="name">Сендвич-панель (<span class="senner"></span>) вертикальный</td>
+                    <td class="mm"></td>
+					<td class="st"> </td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>
+				<tr class="pena">
+					<td class="name">Монтажная пена</td>
+					<td></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>
+				<tr class="germ">
+					<td class="name">Герметик</td>
+					<td></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>
+				<tr class="gvozdi">
+					<td class="name">Жидкие гвозди</td>
+					<td></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>
+				
+				
+				<tr class="ugl">
+					<td class="name">Уголки</td>
+					<td></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>
+				<tr class="fprof">
+					<td class="name">F-профиль</td>
+					<td></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"> </td>
+				</tr>
+				<tr class="pprof">
+					<td class="name">П-профиль</td>
+					<td></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>
+				<tr class="revik-tab">
+					<td class="name">Ревик</td>
+					<td></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>	
+				
+				
+                <tr class="pod_t pod-fields">
+					<td class="name">Подоконник <span class="pod-name-type"> </span></td>
+					<td class="mm"></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>	
+
+                <tr class="por_t pod-fields">
+					<td class="name">Порог <span class="pod-name-type"> </span></td>
+					<td class="mm"></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>	
+				
+                <tr class="zagl_t pod-fields">
+					<td class="name">Заглушка подоконника  <span class="pod-name-type"> </span> </td>
+					<td></td>
+					<td class="st"></td>
+					<td class="buy"></td>
+					<td class="itog"></td>
+				</tr>
+				<tr class="main_table_itogo">
+					<td class="name" colspan="4">Итого </td>
+
+					<td class="itog"></td>
+				</tr>
+				
+			
+			</table><br>
+		</div>
+        <input type="hidden" class="m1" name="m1">
+        <input type="hidden" class="m2" name="m2">
+        <input type="hidden" class="m3" name="m3">
+        <input type="hidden" class="m4" name="m4">
+        <input type="hidden" class="m5" name="m5">
+        <input type="hidden" class="m6" name="m6">
+        <input type="hidden" class="m7" name="m7">
+        <input type="hidden" class="m8" name="m8">
+        <input type="hidden" class="m9" name="m9">
+        <input type="hidden" class="m10" name="m10">
+        <input type="hidden" class="m11" name="m11">
+        <input type="hidden" class="m12" name="m12">
+        <input type="hidden" class="m13" name="m13">
+        <input type="hidden" class="m14" name="m14">
+        <input type="hidden" class="m15" name="m15">
+        <input type="hidden" class="m16" name="m16">
+        <input type="hidden" class="m17" name="m17">
+        <input type="hidden" class="m18" name="m18">
+        <input type="hidden" class="m19" name="m19">
+        <input type="hidden" class="m20" name="m21">
+        <input type="hidden" class="m21" name="m21">
+        <input type="hidden" class="m22" name="m22">
+        <input type="hidden" class="m23" name="m23">
+        <input type="hidden" class="m24" name="m24">
+        <input type="hidden" class="m25" name="m25">
+        <input type="hidden" class="m26" name="m26">
+        <input type="hidden" class="m27" name="m27">
+        <input type="hidden" class="m28" name="m28">
+        <input type="hidden" class="m29" name="m29">
+        <input type="hidden" class="m30" name="m30">
+        <input type="hidden" class="m31" name="m31">
+        <input type="hidden" class="m32" name="m32">
+        <input type="hidden" class="m33" name="m33">
+        <input type="hidden" class="m34" name="m34">
+        <input type="hidden" class="mm34" name="mm34">
+        <input type="hidden" class="m35" name="m35">
+        <input type="hidden" class="m36" name="m36">
+        <input type="hidden" class="m37" name="m37">
+        <input type="hidden" class="m38" name="m38">
+        <input type="hidden" class="m39" name="m39">
+	</form>
+</div>
+    
+
+    <div id="popup" style="display:none;">
+        <form class="basket" action="javascript:void(null);">
+            <input type="hidden" class="m1" name="m1">
+            <input type="hidden" class="m2" name="m2">
+            <input type="hidden" class="m3" name="m3">
+            <input type="hidden" class="m4" name="m4">
+            <input type="hidden" class="m5" name="m5">
+            <input type="hidden" class="m6" name="m6">
+            <input type="hidden" class="m7" name="m7">
+            <p style="text-align:right;margin: 0px;"><span style="cursor:pointer;" class="close">x</span></p>
+            <h2 style="
+                       margin-top: 0px;color:#009fff;font-weight:300;
+                       ">Отправить  заявку </h2>
+           
+            <div> <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" ></div><br>
+            <div> <input type="text" class="form-control" id="phone" name="phone"  placeholder="Ваш Телефон" ></div><br> 
+			<div> <input type="email" class="form-control" id="email" name="email" placeholder="Ваш email" ></div><br> 
+            <div> <div class="order " id="order-btn" type="submit">Отправить</div></div><br>
+        </form>
+    </div>
+	
+	<div class="ajaxOut"></div>
+	
+	<input name="screenshot" type="hidden" class="screen-uri">
+	
+	<input type="hidden" id="podGet" value="1">
+	<input type="hidden" id="ugolGet" value="1">
+	<input type="hidden" id="sendGet" value="1">
+	<input type="hidden" id="otkColor" value="Золотой дуб">
+	
+	<input type="hidden" id="podPriceSave" value="400">
+	
+	<input type="hidden" id="win-with-porog" value="0">
+	
+<div class="send-gif">
+	<div class="sg-in">
+		<div class="sg-flex-in">
+			<img src="img/loader.gif">
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
