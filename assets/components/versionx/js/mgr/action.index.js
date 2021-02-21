@@ -13,7 +13,7 @@ VersionX.page.Index = function(config) {
         cls: 'container form-with-labels',
         components: [{
             xtype: 'panel',
-            html: '<h2>'+_('versionx')+'</h2>',
+            html: '<h2 class="first-title section-title">'+_('versionx')+'</h2>',
             border: false,
             cls: 'modx-page-header',
             bodyStyle: 'margin: 20px 0 0 0;'

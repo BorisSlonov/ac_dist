@@ -210,7 +210,7 @@ jQuery(function($){
 </script>
 	<div class="preOurServices">
   <div class="ourServices">
-	<h2>Наши услуги</h2><br/>
+	<h2 class="first-title section-title">Наши услуги</h2><br/>
 	<div class="ourServicesBlock">
 
 	  <div class="ourServicesEl">
@@ -366,7 +366,7 @@ jQuery(function($){
 	<br/><br/>
 	<div class="preBalconyFinish">
   <div class="balconyFinish">
-	<h2><a href="../../glazing-of-balconies/otdelka-balkonov/default.htm">Внутренняя отделка балконов и лоджий под ключ недорого</a></h2>
+	<h2 class="first-title section-title"><a href="../../glazing-of-balconies/otdelka-balkonov/default.htm">Внутренняя отделка балконов и лоджий под ключ недорого</a></h2>
 	<div class="balconyFinishBlocks">
 
 	  <div class="balconyFinishBlock">

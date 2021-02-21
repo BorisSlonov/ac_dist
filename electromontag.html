@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/jquery.fancybox-themes.css" />
     <link rel="stylesheet" href="css/jquery.jscrollpane.css" />
-   
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -112,8 +112,7 @@
             $('#loading').fadeOut();
         }, 1500);
     </script>
-    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () { Marquiz.init({ host: '//quiz.marquiz.ru', id: '5f6dab731128100044ec688a', autoOpen: 10, autoOpenFreq: 'once', openOnExit: true }); });</script>
+    
 </head>
 
 <body>
@@ -132,9 +131,9 @@
 
         <div id="popup-ask" class="popup-ask popup">
             <form id="ask-form" action="mailer/config.php" method="post" name="submit-bid-form" type="question">
-                <h2>Задать вопрос</h2>
-                <input form="ask-form" name="user_name" type="text" value="" placeholder="Имя" />
-                <input form="ask-form" name="user_email" type="email" value="" placeholder="E-mail" />
+                <h2 class="first-title section-title">Задать вопрос</h2>
+                <input form="ask-form" name="name" type="text" value="" placeholder="Имя" />
+                <input form="ask-form" name="email" type="email" value="" placeholder="E-mail" />
                 <textarea form="ask-form" name="text_comment" placeholder="Вопрос"></textarea>
                 <input name="btn" form="ask-form" class="btn" type="submit" value="Спросить" />
             </form>
@@ -145,14 +144,14 @@
                 <div class="pp_req_close"></div>
                 <div class="pp_req_wrap">
                     <div class="bid-cost">
-                        <h2>Записаться на просмотр объекта</h2>
+                        <h2 class="first-title section-title">Записаться на просмотр объекта</h2>
                         <form id="cost-form" type="question" action="mailer/config.php" method="post"
                             enctype="multipart/form-data">
-                            <input name="user_zap" value="Заявка с записи" type="hidden">
+                            <input name="zap" value="Заявка с записи" type="hidden">
                             <div class="cost-form-inner">
                                 <div class="cost-form-inner-l">
-                                    <input name="user_name" type="text" value="" placeholder="Имя">
-                                    <input name="user_email" type="text" value="" placeholder="Телефон или e-mail">
+                                    <input name="name" type="text" value="" placeholder="Имя">
+                                    <input name="email" type="text" value="" placeholder="Телефон или e-mail" required>
                                     <textarea name="text_comment" placeholder="Описание проекта"></textarea>
                                     <div class="inputfile"></div>
                                     <!--<label>
@@ -168,7 +167,7 @@
                                         <p> </p>
                                         <p>Позвоните нам по телефону <b>+7 (495) 414-26-92</b></p>
                                         <p><br></p>
-                                        <p>Напишите письмо&nbsp; <b>ac-rem@mail.ru</b></p>
+                                        <p>Напишите письмо&nbsp; <b>info@rem-ac.ru</b></p>
                                         <p><br></p>
                                     </div>
                                     <div class="bid-cost_button align-submit">
@@ -187,14 +186,14 @@
                 <div class="pp_req_close"></div>
                 <div class="pp_req_wrap">
                     <div class="bid-cost">
-                        <h2>Форма связи</h2>
+                        <h2 class="first-title section-title">Форма связи</h2>
                         <form id="cost-form" type="question" action="mailer/config.php" method="post"
                             enctype="multipart/form-data">
-                            <input name="user_zap" value="Заявка из формы обратной связи" type="hidden">
+                            <input name="zap" value="Заявка из формы обратной связи" type="hidden">
                             <div class="cost-form-inner">
                                 <div class="cost-form-inner-l">
-                                    <input name="user_name" type="text" value="" placeholder="Имя">
-                                    <input name="user_email" type="text" value="" placeholder="Телефон или e-mail">
+                                    <input name="name" type="text" value="" placeholder="Имя">
+                                    <input name="email" type="text" value="" placeholder="Телефон или e-mail" required>
                                     <textarea name="text_comment" placeholder="Описание проекта"></textarea>
                                     <div class="inputfile"></div>
                                     <!--<label>
@@ -210,7 +209,7 @@
                                         <p> </p>
                                         <p>Позвоните нам по телефону <b>+7 (495) 414-26-92</b></p>
                                         <p><br></p>
-                                        <p>Напишите письмо&nbsp; <b>ac-rem@mail.ru</b></p>
+                                        <p>Напишите письмо&nbsp; <b>info@rem-ac.ru</b></p>
                                         <p><br></p>
                                     </div>
                                     <div class="bid-cost_button align-submit">
@@ -229,14 +228,14 @@
                 <div class="pp_req_close"></div>
                 <div class="pp_req_wrap">
                     <div class="bid-cost">
-                        <h2>Форма связи</h2>
+                        <h2 class="first-title section-title">Форма связи</h2>
                         <form id="cost-form" type="question" action="mailer/config.php" method="post"
                             enctype="multipart/form-data">
-                            <input name="user_zap" value="Заявка из формы обратной связи" type="hidden">
+                            <input name="zap" value="Заявка из формы обратной связи" type="hidden">
                             <div class="cost-form-inner">
                                 <div class="cost-form-inner-l">
-                                    <input name="user_name" type="text" value="" placeholder="Имя">
-                                    <input name="user_email" type="text" value="" placeholder="Телефон или e-mail">
+                                    <input name="name" type="text" value="" placeholder="Имя">
+                                    <input name="email" type="text" value="" placeholder="Телефон или e-mail" required>
                                     <textarea name="text_comment" placeholder="Описание проекта"></textarea>
                                     <div class="inputfile"></div>
                                     <!--<label>
@@ -252,7 +251,7 @@
                                         <p> </p>
                                         <p>Позвоните нам по телефону <b>+7 (495) 414-26-92</b></p>
                                         <p><br></p>
-                                        <p>Напишите письмо&nbsp; <b>ac-rem@mail.ru</b></p>
+                                        <p>Напишите письмо&nbsp; <b>info@rem-ac.ru</b></p>
                                         <p><br></p>
                                     </div>
                                     <div class="bid-cost_button align-submit">
@@ -266,11 +265,12 @@
             </div>
         </div>
 
-    
+
+        <!-- header-new -->
 
         <div class="contact-panel-wrapper">
             <div class="box big contact-panel">
-                <a href="#" class="contact-panel-link">
+                <a href="tel:+7 (495) 414-26-92" class="contact-panel-link">
                     <span class="icon">
                         <svg class="svg-red" version="1.1" width="18" viewBox="0 0 384 384" id="Capa_1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -281,26 +281,11 @@
                                         d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594 c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448 c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813 C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z" />
                                 </g>
                             </g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
                         </svg>
                     </span>
                     +7 (495) 414-26-92
                 </a>
-                <a href="#" class="contact-panel-link">
+                <a href="mailto:info@rem-ac.ru" class="contact-panel-link">
                     <span class="icon">
                         <svg class="svg-green" version="1.1" width="18" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -327,26 +312,12 @@
                                         d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856 L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z" />
                                 </g>
                             </g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
                         </svg>
                     </span>
-                    ac-rem@mail.ru
+                    info@rem-ac.ru
                 </a>
-                <a href="#" class="contact-panel-link">
+
+                <a data-fancybox href="#forma-svyaz" class="contact-panel-link">
                     <span class="icon">
                         <svg class="svg-red" width="18" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 459.668 459.668"
@@ -361,21 +332,6 @@
                                     </g>
                                 </g>
                             </g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
                         </svg>
                     </span>
                     Заказать обратный звонок
@@ -395,28 +351,8 @@
                                     <path
                                         d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606 c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z" />
                                 </g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
                             </g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
+
                         </svg>
                     </span>
                 </a>
@@ -424,19 +360,21 @@
         </div>
         <div class="header-wrapper">
             <header class="box big header">
-                <a href="#" class="logo">
+                <a href="/" class="logo">
                     <picture>
                         <source media="(max-width: 840px)" srcset="images/header-logo-white-min.png">
                         <img src="new-assets/images/header-logo-min.png" alt="">
                     </picture>
-                    АС - Качественный ремонт квартир и
-                    коттеджей в Москве и подмосковье
+                    <span>
+                        АС - Качественный ремонт квартир и
+                        коттеджей в Москве и подмосковье
+                    </span>
                 </a>
 
                 <nav class="header-nav">
                     <ul class="header-nav-list">
                         <li class="header-nav-list-item">
-                            <a href="#"><span class="icon">
+                            <a href="http://rem-ac.ru/constructor/008/"><span class="icon">
                                     <svg width="18" enable-background="new 0 0 512.254 512.254"
                                         viewBox="0 0 512.254 512.254" width="512" xmlns="http://www.w3.org/2000/svg">
                                         <g id="XMLID_1034_">
@@ -452,7 +390,7 @@
                                 Конструктор натяжного потолка</a>
                         </li>
                         <li class="header-nav-list-item">
-                            <a href="#"><span class="icon">
+                            <a href="http://rem-ac.ru/constructor/okna_1/okno/"><span class="icon">
                                     <svg height="18" width="18" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                                         xml:space="preserve">
@@ -490,28 +428,13 @@
                                         <path
                                             d="M464.976,0H47.024c-7.581,0-13.749,6.167-13.749,13.749v339.416c0,4.023,3.262,7.286,7.287,7.286 c4.024,0,7.287-3.262,7.287-7.287V14.573h416.304v60.842c0,4.024,3.262,7.287,7.287,7.287c4.025,0,7.287-3.262,7.287-7.287V13.749 C478.725,6.167,472.557,0,464.976,0z" />
                                         </g>
-                                        </g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
+
                                     </svg>
                                 </span>
                                 Калькулятор окон</a>
                         </li>
                         <li class="header-nav-list-item">
-                            <a href="#"><span class="icon">
+                            <a href="http://rem-ac.ru/constructor/lodjiya/"><span class="icon">
                                     <svg height="18" width="18" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                                         xml:space="preserve">
@@ -545,27 +468,12 @@
                                                     d="M390.167,250.795c-4.378-1.082-8.81,1.589-9.893,5.97C366.112,314.04,315.009,354.043,256,354.043 c-28.906,0-56.205-9.447-78.945-27.321c-3.549-2.789-8.684-2.174-11.472,1.375c-2.789,3.548-2.173,8.684,1.374,11.472 c25.649,20.16,56.44,30.815,89.043,30.815c32.871,0,63.86-10.809,89.613-31.258c24.978-19.833,42.921-47.689,50.523-78.437 C397.219,256.307,394.547,251.878,390.167,250.795z" />
                                             </g>
                                         </g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
                                     </svg>
                                 </span>
                                 Калькулятор лоджий</a>
                         </li>
                         <li class="header-nav-list-item">
-                            <a href="#"><span class="icon">
+                            <a href="http://rem-ac.ru/3D-tur/stoletova-9/"><span class="icon">
                                     <svg height="18" width="18" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                                         xml:space="preserve">
@@ -599,21 +507,6 @@
                                                     d="M472.37,123.023L263.517,2.021c-4.649-2.694-10.386-2.694-15.035,0L39.544,123.022c-4.606,2.669-7.481,7.638-7.481,12.966 c0,0.03,0.003,0.06,0.003,0.089v239.924c0,5.379,2.923,10.413,7.63,13.063L248.483,509.98c2.249,1.303,4.925,2.02,7.518,2.02 c2.707,0,5.352-0.766,7.518-2.02l208.702-120.917c0.035-0.02,0.069-0.04,0.104-0.06c4.837-3.49,7.444-6.423,7.517-12.821 c0.001-0.06,0.006-0.119,0.006-0.179V136.079c0-0.03,0.003-0.06,0.003-0.089C479.851,130.657,476.974,125.687,472.37,123.023z  M241.004,470.986L77.178,376.069l126.299-72.429c7.185-4.12,9.669-13.284,5.548-20.468c-4.119-7.185-13.283-9.668-20.468-5.548 L62.055,350.116V161.909l178.949,102.77V470.986z M256,238.706L77.156,135.945L256,32.327l178.844,103.618L256,238.706z  M449.954,350.116l-126.511-72.493c-7.184-4.119-16.348-1.637-20.468,5.548c-4.121,7.185-1.637,16.348,5.548,20.468 l126.299,72.428l-163.827,94.917V264.679l178.958-102.77V350.116z" />
                                             </g>
                                         </g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
                                     </svg>
                                 </span>
                                 3D-тур помещений</a>
@@ -626,7 +519,7 @@
             <nav class="box big nav">
                 <ul class="nav-list">
                     <li class="nav-list-item">
-                        <a href="" title="">Ремонт</a>
+                        <a href="/remont_kvartir_portfolio.html" title="">Ремонт</a>
                         <div class="nav-sub-list-icon">
                             <svg height="18" width="18" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612.02px"
@@ -659,7 +552,7 @@
                         </div>
                         <ul class="nav-sub-list">
                             <li class="nav-sub-list-item">
-                                <a href="" title="">Ремонт квартир</a>
+                                <a href="/remont_kvartir_etapy_rabot.html" title="">Ремонт квартир</a>
                                 <div class="nav-sub-list-icon">
                                     <svg height="18" width="18" version="1.1" id="Capa_1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -673,49 +566,24 @@
                                                 </g>
                                             </g>
                                         </g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
                                     </svg>
                                 </div>
                                 <ul class="nav-sub-list">
                                     <li class="nav-sub-list-item">
-                                        <a href="vneshnyaya-otdelka-derevyannogo-doma.html">Внешняя отделка деревянного
-                                            дома</a>
+                                        <a href="remont_kvartir_portfolio.html">Ремонт квартир портфолио</a>
                                     </li>
                                     <li class="nav-sub-list-item">
-                                        <a href="vnutrennyaya-otdelka-sten-derevyannogo-doma.html">Внутренняя отделка
-                                            деревянного дома</a>
+                                        <a href="remont_kvartir_price.html">Ремонт квартир цены</a>
                                     </li>
-                                    <li class="nav-sub-list-item">
-                                        <a href="otdelka-doma-iz-brevna.html">Отделка дома из бревна</a>
-                                    </li>
-                                    <li class="nav-sub-list-item">
-                                        <a href="rascenki-na-otdelku-derevyannogo-doma.html">Расценки на внутреннюю
-                                            отделку</a>
-                                    </li>
-                                    <li class="nav-sub-list-item">
-                                        <a href="foto-vnutrennej-otdelki-derevyannogo-doma.html">Фото внутренней отделки
-                                            деревянного дома</a>
-                                    </li>
+
                                 </ul>
                             </li>
-                            <li class="nav-sub-list-item"><a href="" title="">Ремонт коттеджей</a></li>
-                            <li class="nav-sub-list-item"><a href="" title="">Ремонт таунхаусов</a></li>
+                            <li class="nav-sub-list-item"><a href="/otdelka_etap.html" title="">Ремонт коттеджей</a>
+                            </li>
+                            <li class="nav-sub-list-item"><a href="/remont_i_otdelka_taunhausov.html" title="">Ремонт
+                                    таунхаусов</a></li>
                             <li class="nav-sub-list-item">
-                                <a href="" title="">Ремонт деревянного дома</a>
+                                <a href="/remont-derevyannogo-doma.html" title="">Ремонт деревянного дома</a>
                                 <div class="nav-sub-list-icon">
                                     <svg height="18" width="18" version="1.1" id="Capa_1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -729,21 +597,6 @@
                                                 </g>
                                             </g>
                                         </g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
-                                        <g></g>
                                     </svg>
                                 </div>
                                 <ul class="nav-sub-list">
@@ -768,7 +621,9 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-sub-list-item"><a href="" title="">Ремонт коммерческих помещений</a></li>
+                            <li class="nav-sub-list-item"><a href="/remont_commercheskogo_pomeshenya.html"
+                                    title="">Ремонт
+                                    коммерческих помещений</a></li>
                         </ul>
                     </li>
 
@@ -784,26 +639,11 @@
                                         </path>
                                     </g>
                                 </g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
                             </svg>
                         </span>+7 (495) 414-26-92
                     </a>
                     <li class="nav-list-item">
-                        <a href="" title="">Портфолио</a>
+                        <a href="/portfolio_dizajn_proektov.html" title="">Портфолио</a>
                         <div class="nav-sub-list-icon">
                             <svg height="18" width="18" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612.02px"
@@ -817,31 +657,19 @@
                                         </g>
                                     </g>
                                 </g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
                             </svg>
                         </div>
                         <ul class="nav-sub-list">
-                            <li class="nav-sub-list-item"><a href="" title="">Портфолио ремонта квартир</a></li>
-                            <li class="nav-sub-list-item"><a href="" title="">Портфолио ремонта коттеджей</a></li>
-                            <li class="nav-sub-list-item"><a href="" title="">Портфолио коммерческих помещений</a></li>
+                            <li class="nav-sub-list-item"><a href="/remont_kvartir_portfolio.html" title="">Портфолио
+                                    ремонта квартир</a></li>
+                            <li class="nav-sub-list-item"><a href="/otdelka_portfolio.html" title="">Портфолио
+                                    ремонта коттеджей</a></li>
+                            <li class="nav-sub-list-item"><a href="/portfolio-kommercheskih-pomeschenij.html"
+                                    title="">Портфолио коммерческих помещений</a></li>
                         </ul>
                     </li>
                     <li class="nav-list-item">
-                        <a href="" title="">Этапы ремонта</a>
+                        <a href="/remont_kvartir_etapy_rabot.html" title="">Этапы ремонта</a>
                         <div class="nav-sub-list-icon">
                             <svg height="18" width="18" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612.02px"
@@ -855,21 +683,6 @@
                                         </g>
                                     </g>
                                 </g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
                             </svg>
                         </div>
                         <ul class="nav-sub-list">
@@ -898,7 +711,7 @@
                                 <a href="shumoizolyaciya_kvartiry.html">Шумоизоляция квартиры</a>
                             </li>
                             <li class="nav-sub-list-item">
-                                <a href="uladka_napolnyh_pokryti.html">Укладка напольных покрытий</a>
+                                <a href="ukladka_napolnyh_pokryti.html">Укладка напольных покрытий</a>
                             </li>
                             <li class="nav-sub-list-item">
                                 <a href="malyarnye_raboty.html">Малярные работы</a>
@@ -918,9 +731,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-list-item"><a href="" title="">Прайс</a></li>
+                    <li class="nav-list-item"><a href="/price.html" title="">Прайс</a></li>
                     <li class="nav-list-item">
-                        <a href="" title="">Дизайн интерьера</a>
+                        <a href="/portfolio_dizajn_proektov.html" title="">Дизайн интерьера</a>
                         <div class="nav-sub-list-icon">
                             <svg height="18" width="18" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612.02px"
@@ -934,31 +747,16 @@
                                         </g>
                                     </g>
                                 </g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
-                                <g></g>
                             </svg>
                         </div>
                         <ul class="nav-sub-list">
                             <li class="nav-sub-list-item">
-                                <a href="portfolio_dizajn_proektov.html">Портфолио</a>
+                                <a href="/portfolio_dizajn_proektov.html">Портфолио</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-list-item">
-                        <a href="" title="">Инженерные системы</a>
+                        <a title="">Инженерные системы</a>
                         <div class="nav-sub-list-icon">
                             <svg height="18" width="18" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612.02px"
@@ -1010,16 +808,62 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-list-item"><a href="" title="">Компания</a></li>
-                    <li class="nav-list-item"><a href="" title="">Отзывы</a></li>
+                    <li class="nav-list-item"><a href="/kachestvo_rabot.html" title="">Компания</a></li>
+                    <li class="nav-list-item"><a href="/otzyvy.php" title="">Отзывы</a></li>
 
-                    <li class="nav-list-item hide mshow"><a href="" title="">Конструктор натяжного потолка</a></li>
-                    <li class="nav-list-item hide mshow"><a href="" title="">Калькулятор окон</a></li>
-                    <li class="nav-list-item hide mshow"><a href="" title="">Калькулятор лоджий</a></li>
-                    <li class="nav-list-item hide mshow"><a href="" title="">3D-тур помещений</a></li>
+                    <li class="nav-list-item hide mshow"><a href="http://rem-ac.ru/constructor/008/"
+                            title="">Конструктор натяжного потолка</a></li>
+                    <li class="nav-list-item hide mshow"><a href="http://rem-ac.ru/constructor/okna_1/okno/"
+                            title="">Калькулятор окон</a></li>
+                    <li class="nav-list-item hide mshow"><a href="http://rem-ac.ru/constructor/lodjiya/"
+                            title="">Калькулятор лоджий</a></li>
+                    <li class="nav-list-item hide mshow"><a href="http://rem-ac.ru/3D-tur/stoletova-9/" title="">3D-тур
+                            помещений</a></li>
                 </ul>
             </nav>
         </div>
+
+
+
+        <div data-fancybox="popup" class="forma-svyaz" id="forma-svyaz">
+            <div class="forma-svyaz__container">
+                <h2 class="forma-svyaz__h2">Форма связи</h2>
+                <form id="form-svyaz" onsubmit="send(event, 'mailer/config.php')" method="post"
+                    enctype="multipart/form-data">
+                    <input name="zap" value="Заявка из формы обратной связи" type="hidden">
+                    <div class="">
+                        <div class="">
+                            <input name="name" class="cost-form-input" type="text" value="" placeholder="Имя">
+                            <input name="email" class="cost-form-input" type="text" value=""
+                                placeholder="Телефон или e-mail" required>
+                            <textarea name="text_comment" class="cost-form-input cost-form-input_textarea"
+                                placeholder="Описание проекта"></textarea>
+                            <div class="inputfile"></div>
+                            <!--<label>
+                                        <input name="attachment" id="inputfile" class="inputfile" multiple="multiple" accept="image/*,image/jpeg" data-multiple-caption="Выбрано файлов: {count}" type="file"><span>Прикрепить файл</span>
+                                        <div>Обзор...</div>
+                                    </label>-->
+                        </div>
+                        <div class="">
+                            <br>
+                            <p>Заполните <b>форму</b>&nbsp;обратной связи</p>
+                            <p><br></p>
+                            <p> </p>
+                            <p>Позвоните нам по телефону <b>+7 (495) 414-26-92</b></p>
+                            <p><br></p>
+                            <p>Напишите письмо&nbsp; <b>info@rem-ac.ru</b></p>
+                            <p><br></p>
+                        </div>
+                        <div class="bid-cost_button">
+                            <input name="btn" class="btn" type="submit" value="Отправить" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- header-new -->
+
 
         <div role="search" class="ssPort">
             <span class="closeSearch" id="btCloseSearch"></span>
@@ -1387,6 +1231,12 @@
                                         1 000-2000 руб. за м<sup>2</sup>
                                     </div>
 
+                                    <div class="prices_block_link">
+                                        <a data-fancybox href="#forma-svyaz" class="button button-blue block">Оставить
+                                            заявку</a>
+                                    </div>
+
+
 
                                 </div>
                             </div>
@@ -1413,6 +1263,11 @@
 
                                     <div class="prices_block_subtext">
                                         200-300 руб. за м<sup>2</sup>
+                                    </div>
+
+                                    <div class="prices_block_link">
+                                        <a data-fancybox href="#forma-svyaz" class="button button-blue block">Оставить
+                                            заявку</a>
                                     </div>
 
 
@@ -1444,6 +1299,11 @@
                                         200-300 руб. за м<sup>2</sup>
                                     </div>
 
+                                    <div class="prices_block_link">
+                                        <a data-fancybox href="#forma-svyaz" class="button button-blue block">Оставить
+                                            заявку</a>
+                                    </div>
+
 
                                 </div>
                             </div>
@@ -1470,6 +1330,11 @@
 
                                     <div class="prices_block_subtext">
                                         100-200 руб. за м<sup>2</sup>
+                                    </div>
+
+                                    <div class="prices_block_link">
+                                        <a data-fancybox href="#forma-svyaz" class="button button-blue block">Оставить
+                                            заявку</a>
                                     </div>
 
 
@@ -1646,39 +1511,19 @@
             <section class="">
                 <div class="l-container">
                     <center>
-                        <h2>Дипломы и сертификаты</h2>
+                        <h2 class="first-title section-title">Дипломы и сертификаты</h2>
                     </center>
-                </div>
-                <br><br>
-                <div class="container tac">
-                    <div class="row tac">
-                        <div class="col-md-3 col-sm-4 col-xs-6 color-1">
-                            <img src="img/diplom/1.jpg" style="margin: 16px;width:100%;" />
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 color-1">
-                            <img src="img/diplom/2.jpg" style="margin: 16px;width:100%;" />
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 color-1">
-                            <img src="img/diplom/3.jpg" style="margin: 16px;width:100%;" />
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 color-1">
-                            <img src="img/diplom/4.jpg" style="margin: 16px;width:100%;" />
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 color-1">
-                            <img src="img/diplom/5.jpg" style="margin: 16px;width:100%;" />
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 color-1">
-                            <img src="img/diplom/6.jpg" style="margin: 16px;width:100%;" />
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 color-1">
-                            <img src="img/diplom/7.png" style="margin: 16px;width:100%;" />
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 color-1">
-                            <img src="img/diplom/8.png" style="margin: 16px;width:100%;" />
-                        </div>
+                    <div class="images">
+                        <img loading="lazy" data-lazy data-src="new-assets/images/dip-1-min.jpg" alt="">
+                        <img loading="lazy" data-lazy data-src="new-assets/images/dip-2-min.jpg" alt="">
+                        <img loading="lazy" data-lazy data-src="new-assets/images/dip-3-min.jpg" alt="">
+                        <img loading="lazy" data-lazy data-src="new-assets/images/dip-4-min.jpg" alt="">
+                        <img loading="lazy" data-lazy data-src="new-assets/images/dip-5-min.jpg" alt="">
+                        <img loading="lazy" data-lazy data-src="new-assets/images/dip-6-min.jpg" alt="">
+                        <img loading="lazy" data-lazy data-src="new-assets/images/dip-7-min.png" alt="">
+                        <img loading="lazy" data-lazy data-src="new-assets/images/dip-8-min.png" alt="">
                     </div>
                 </div>
-
             </section>
 
             <section class="references-block" style="display: block;">
@@ -1748,7 +1593,6 @@
             <div class="l-container">
                 <a href="/" class="logo logo_footer">
                     <picture>
-                        <source media="(max-width: 840px)" srcset="images/header-logo-white-min.png">
                         <img src="new-assets/images/header-logo-min.png" alt="">
                     </picture>
                     <span>
@@ -1765,12 +1609,12 @@
                     <div class="l-container">
                         <div class="footer-inner">
                             <div class="footer-item footer-contacts col-md-6 col-sm-6">
-                                <p>г. Москва, Ленинградский проспект, 80 к21</p>
+                                <p>г. Москва, Ленинский проспект 109 6-й этаж 24</p>
 
-                                <p>Офис: +7 (495) 414-26-92</p>
-                                <p>e-mail: ac-rem@mail.ru</p>
+                                <p>Телефон: +7 (495) 414-26-92</p>
+                                <p>e-mail: info@rem-ac.ru</p>
                                 <p><a href="index.html#">Не является публичной офертой</a></p>
-                                <p>2013 - 2020</p>
+                                <p>2007 - 2021</p>
                             </div>
                             <div class="footer-item footer-moskov col-md-6 col-sm-6">
                                 <img src="img/kollaj.jpg" />
@@ -1778,19 +1622,7 @@
                         </div>
 
 
-                        <script>
-                            (function (w, d, s, h, id) {
-                                w.roistatProjectId = id;
-                                w.roistatHost = h;
-                                var p = d.location.protocol == "https:" ? "https://" : "http://";
-                                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
-                                var js = d.createElement(s);
-                                js.async = 1;
-                                js.src = p + h + u;
-                                var js2 = d.getElementsByTagName(s)[0];
-                                js2.parentNode.insertBefore(js, js2);
-                            })(window, document, 'script', 'cloud.roistat.com', '1321ebd69e4b22e8a2265847f5426d8f');
-                        </script>
+                        
                     </div>
                 </div>
             </div>
@@ -1887,7 +1719,6 @@
         <!-- /Yandex.Metrika counter -->
         <!--<div class="marquiz-pops marquiz-pops_position_bottom-right marquiz-pops_rounded marquiz-pops_shadowed marquiz-pops_blicked marquiz-pops_position" ><a class="marquiz-pops__body" href="#popup:marquiz_5f6dab731128100044ec688a" data-marquiz-pop-text-color="#ffffff" data-marquiz-pop-background-color="#3034e2" data-marquiz-pop-svg-color="#fff" data-marquiz-pop-close-color="#fff" data-marquiz-pop-color-pulse="rgba(48, 52, 226, 0.4)" data-marquiz-pop-color-pulse-alpha="rgba(48, 52, 226, 0)" data-marquiz-pop-bonuses="2" data-marquiz-pop-delay="20s" data-marquiz-pop="true"><span class="marquiz-pops__icon"></span><span class="marquiz-pops__content"><span class="marquiz-pops__content-title">Скидки до 25%</span><span class="marquiz-pops__content-text">&laquo;Пройдите тест и получите скидку&raquo;</span></span><span class="marquiz-pops__bonus">Вам доступны бонусы и скидка</span></a></div>-->
         <!-- <Main scripts -->
-        <script src="new-assets/js/jquery-2.0.3.min.js"></script>
         <script src="new-assets/js/slick.min.js"></script>
         <script src="new-assets/js/jquery.fancybox.min.js"></script>
         <script src="new-assets/js/jquery.lazy.min.js"></script>

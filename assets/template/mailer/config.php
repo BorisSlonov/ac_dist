@@ -19,7 +19,7 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(); //Инициализация класса
 $from = 'inforemac@yandex.ru'; //Адрес почты, с которой идет отправка письма
-$to = 'ac-rem@mail.ru'; //Адрес получателя
+$to = 'info@rem-ac.ru'; //Адрес получателя
 $mail -> isSMTP(); //Применение протокола SMTP
 $mail -> Host = 'smtp.yandex.ru';//Адрес почтового сервера
 $mail -> SMTPAuth = true; //Включение режима авторизации

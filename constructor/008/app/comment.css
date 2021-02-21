@@ -10852,11 +10852,11 @@ button.owl-thumb-item-gall {
 
 .l-container {
     position: relative;
-    width: 1080px;
+    max-width: 1170px;
     margin: 0 auto;
     padding-top: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
     /*background-color: rgba(0,0,0,0.1);*/
 }
 
@@ -14782,11 +14782,7 @@ span.extra_bold {
     margin-bottom: 100px;
 }
 
-.article_wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 62px;
-}
+
 
 .feedback_wrap h1 {
     width: 1080px;
@@ -16670,7 +16666,6 @@ span.prices_block_price_s {
 }
 
 .prices_blocks {
-    width: 1080px;
     margin: 0 auto;
     /*    margin-top: 54px; */
     margin-top: 29px;
@@ -19755,11 +19750,7 @@ body::-webkit-scrollbar-thumb {
         width: 840px;
         margin: 0 auto;
     }
-    .article_wrapper {
-        width: 840px;
-        margin: 0 auto;
-        padding-left: 0;
-    }
+   
     .article_wrap {
         width: 100%;
         /* margin: 0 auto; */

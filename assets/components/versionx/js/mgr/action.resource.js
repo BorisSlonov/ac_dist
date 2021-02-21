@@ -29,7 +29,7 @@ VersionX.page.Resource = function(config) {
         cls: 'container',
         components: [{
             xtype: 'panel',
-            html: '<h2>'+_('versionx')+' '+_('versionx.resources.detail')+'</h2>',
+            html: '<h2 class="first-title section-title">'+_('versionx')+' '+_('versionx.resources.detail')+'</h2>',
             cls: 'modx-page-header',
             bodyStyle: 'margin: 20px 0 0 0;',
             border: false

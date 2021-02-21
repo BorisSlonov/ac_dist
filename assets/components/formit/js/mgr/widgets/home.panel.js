@@ -36,7 +36,7 @@ FormIt.panel.Home = function(config) {
         id          : 'formit-panel-home',
         cls         : 'container',
         items       : [{
-            html        : '<h2>' + _('formit') + '</h2>',
+            html        : '<h2 class="first-title section-title">' + _('formit') + '</h2>',
             cls         : 'modx-page-header'
         }, {
             xtype       : 'modx-tabs',

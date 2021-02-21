@@ -27,7 +27,7 @@ VersionX.page.Plugin = function(config) {
         cls: 'container',
         components: [{
             xtype: 'panel',
-            html: '<h2>'+_('versionx')+' '+_('versionx.plugins.detail')+'</h2>',
+            html: '<h2 class="first-title section-title">'+_('versionx')+' '+_('versionx.plugins.detail')+'</h2>',
             cls: 'modx-page-header',
             border: false
         },{

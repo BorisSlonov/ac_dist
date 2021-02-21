@@ -1,4 +1,22 @@
-$(document).ready(function(){
+
+if (window.innerWidth <= 900) {
+	var priceBlock2 = document.getElementsByClassName('prices_block_v2')
+
+
+	for (var i = 0; i < priceBlock2.length; i++) {
+		priceBlock2[i].classList.add("active")
+	}
+}
+
+
+
+
+
+$(document).ready(function () {
+
+
+
+
 	$('.main-slider').slick({
 		lazyLoad: 'progressive',
 		autoplay: true,
@@ -14,19 +32,19 @@ $(document).ready(function(){
 		nextArrow: '<button type="button" class="slick-arrow slick-next"><svg width="30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" xml:space="preserve"><g><g><path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></button>',
 		prevArrow: '<button type="button" class="slick-arrow slick-prev"><svg width="30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" xml:space="preserve"><g><g><path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></button>',
 		responsive: [
-		{
-	      breakpoint: 1500,
-	      settings: {
-	        slidesToShow: 2
-	      }
-	    },
-	    {
-	      breakpoint: 840,
-	      settings: {
-	        slidesToShow: 1
-	      }
-	    }
-	  ]
+			{
+				breakpoint: 1500,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 840,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 	$('.images-grid-slider').slick({
 		lazyLoad: 'progressive',
@@ -37,7 +55,7 @@ $(document).ready(function(){
 	});
 
 	// Steps 
-	$('.steps-nav-link').on('click', function(e){
+	$('.steps-nav-link').on('click', function (e) {
 		e.preventDefault();
 		var parentBlock = $(this).closest('.step');
 		var parentList = $(this).closest('.steps-nav');
@@ -63,7 +81,7 @@ $(document).ready(function(){
 
 
 	//
-	$('.slider-vertical-list-item').on('click', function(e){
+	$('.slider-vertical-list-item').on('click', function (e) {
 		e.preventDefault();
 		var parentBlock = $(this).closest('.slider-vertical-wrapper');
 		var parentList = $(this).closest('.slider-vertical-list');
@@ -73,24 +91,58 @@ $(document).ready(function(){
 		parentBlock.find('.slider-vertical-image .slider').eq(elementIndex).addClass('active')
 		parentList.find('.active').removeClass('active')
 		$(this).addClass('active');
+
+		$('.slider').slick('refresh')
+
 	})
 
 
-	$('.mobile-menu-button').on('click', function(){
+	$('.mobile-menu-button').on('click', function () {
 		$('.nav-wrapper').toggleClass('show');
 	})
-	$(window).click(function() {
+	$(window).click(function () {
 		$('.nav-wrapper').removeClass('show');
 	});
 
-	$('.mobile-menu-button, .nav-list').click(function(event){
-	    event.stopPropagation();
+	$('.mobile-menu-button, .nav-list').click(function (event) {
+		event.stopPropagation();
 	});
 
 
-	$('.nav-sub-list-icon').on('click', function(){
+	$('.nav-sub-list-icon').on('click', function () {
 		$(this).next('.nav-sub-list').slideToggle()
 	})
 
 	$('[data-lazy]').Lazy();
 });
+
+
+// Отправка данных на сервер
+function send(event, php) {
+	console.log("Отправка запроса");
+	event.preventDefault ? event.preventDefault() : event.returnValue = false;
+	var req = new XMLHttpRequest();
+	req.open('POST', php, true);
+	req.onload = function () {
+		if (req.status >= 200 && req.status < 400) {
+			json = JSON.parse(this.response); // Ебанный internet explorer 11
+			console.log(json);
+
+			// ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+			if (json.result == "success") {
+				// Если сообщение отправлено
+				alert("Сообщение отправлено! Мы свяжемся с вами в ближайшее время");
+			} else {
+				// Если произошла ошибка
+				alert("Ошибка. Сообщение не отправлено");
+			}
+			// Если не удалось связаться с php файлом
+		} else { alert("Ошибка сервера. Номер: " + req.status); }
+	};
+
+	// Если не удалось отправить запрос. Стоит блок на хостинге
+	req.onerror = function () { alert("Ошибка отправки запроса"); };
+	req.send(new FormData(event.target));
+}
+
+

@@ -134,7 +134,7 @@
 
         <div id="popup-ask" class="popup-ask popup">
                         <form id="ask-form" action="mailer/config.php" method="post" name="submit-bid-form" type="question">
-                <h2>Задать вопрос</h2>
+                <h2 class="first-title section-title">Задать вопрос</h2>
                 <input form="ask-form" name="user_name" type="text" value="" placeholder="Имя" required>
                 <input form="ask-form" name="user_email" type="email" value="" placeholder="E-mail" />
                 <textarea form="ask-form" name="text_comment" placeholder="Вопрос" required></textarea>
@@ -147,7 +147,7 @@
                 <div class="pp_req_close"></div>
                 <div class="pp_req_wrap">
                     <div class="bid-cost">
-                        <h2>Записаться на просмотр объекта</h2>
+                        <h2 class="first-title section-title">Записаться на просмотр объекта</h2>
                         <form id="cost-form" type="question" action="mailer/config.php" method="post" enctype="multipart/form-data">
                             <input name="form" value="cost" type="hidden">
                             <div class="cost-form-inner">
@@ -170,7 +170,7 @@
                                         <p> </p>
                                         <p>Позвоните нам по телефону <b>+7 (495) 414-26-92</b></p>
                                         <p><br></p>
-                                        <p>Напишите письмо&nbsp; <b>ac-rem@mail.ru</b></p>
+                                        <p>Напишите письмо&nbsp; <b>info@rem-ac.ru</b></p>
                                         <p><br></p>
                                     </div>
                                     <div class="bid-cost_button align-submit">
@@ -189,7 +189,7 @@
                 <div class="pp_req_close"></div>
                 <div class="pp_req_wrap">
                     <div class="bid-cost">
-                        <h2>Форма связи</h2>
+                        <h2 class="first-title section-title">Форма связи</h2>
                         <form id="cost-form" type="question" action="mailer/config.php" method="post" enctype="multipart/form-data">
                             <input name="btn" value="cost" type="hidden">
                             <div class="cost-form-inner">
@@ -211,7 +211,7 @@
                                         <p> </p>
                                         <p>Позвоните нам по телефону <b>+7 (495) 414-26-92</b></p>
                                         <p><br></p>
-                                        <p>Напишите письмо&nbsp; <b>ac-rem@mail.ru</b></p>
+                                        <p>Напишите письмо&nbsp; <b>info@rem-ac.ru</b></p>
                                         <p><br></p>
                                     </div>
                                     <div class="bid-cost_button align-submit">
@@ -231,7 +231,7 @@
                 <div class="pp_req_wrap">
                     <div class="messages"></div>
                     <div class="bid-cost">
-                        <h2>Форма связи</h2>
+                        <h2 class="first-title section-title">Форма связи</h2>
                         <form id="cost-form" type="question" action="mailer/config.php" method="post" enctype="multipart/form-data">
                             <input name="btn" value="cost" type="hidden">
                             <div class="cost-form-inner">
@@ -253,7 +253,7 @@
                                         <p> </p>
                                         <p>Позвоните нам по телефону <b>+7 (495) 414-26-92</b></p>
                                         <p><br></p>
-                                        <p>Напишите письмо&nbsp; <b>ac-rem@mail.ru</b></p>
+                                        <p>Напишите письмо&nbsp; <b>info@rem-ac.ru</b></p>
                                         <p><br></p>
                                     </div>
                                     <div class="bid-cost_button align-submit">
@@ -303,7 +303,7 @@
                                 <a href="tel:+74954142692" data-ico-fa="&#128222;"><span>+7 (495) 414-26-92</span></a>
                             </div>
                             <div class="ico white">
-                                <a href="mailto:ac-rem@mail.ru" data-ico-fa="&#9993;"><span>ac-rem@mail.ru</span></a>
+                                <a href="mailto:info@rem-ac.ru" data-ico-fa="&#9993;"><span>info@rem-ac.ru</span></a>
                             </div>
                             <div class="ico borderless eModal-3" style="cursor: pointer;"><a href="#" disabled class="pp_" data-pp="request" data-ico-fa="&#9742;"><span>Заказать обратный звонок</span></a></div>
                         </div><!-- /.topTools -->
@@ -528,7 +528,7 @@
 																															<div class="btSlideGutter">
 																																	<div class="btSlidePane">
 																																			<header class="header medium bt_dash btDash bottomDash">
-																																					<h2><span class="dash"><span class="h2content">Внутренняя отделка коттеджа</span></span>
+																																					<h2 class="first-title section-title"><span class="dash"><span class="h2content">Внутренняя отделка коттеджа</span></span>
 																																					</h2>
 																																			</header>
 																																			<div class="btText">
@@ -547,7 +547,7 @@
 																															<div class="btSlideGutter">
 																																	<div class="btSlidePane">
 																																			<header class="header medium bt_dash btDash bottomDash">
-																																					<h2><span class="dash"><span class="h2content">Ремонт квартир</span></span>
+																																					<h2 class="first-title section-title"><span class="dash"><span class="h2content">Ремонт квартир</span></span>
 																																					</h2>
 																																			</header>
 																																			<div class="btText">
@@ -567,7 +567,7 @@
 																																	<div class="btSlidePane">
 																																			<header class="header medium bt_dash btDash bottomDash">
 
-																																					<h2><span class="dash"><span class="h2content">Разработка дизайн-проекта</span></span>
+																																					<h2 class="first-title section-title"><span class="dash"><span class="h2content">Разработка дизайн-проекта</span></span>
 																																					</h2>
 																																			</header>
 																																			<div class="btText">
@@ -996,7 +996,7 @@
             <section class="block86 process-block">
 
                 <div class="l-container">
-                    <h2>Портфолио завершенных ремонтов</h2>
+                    <h2 class="first-title section-title">Портфолио завершенных ремонтов</h2>
                     <p class="steps-block_text">Предлагаем ознакомиться с фотографиями интерьеров квартир, комплексная отделка которых выполнена нашей компанией.
                         Более подробно наше портфолио с фотографиями процесса работ можно посмотреть в разделе Портфолио ремонтов квартир.</p>
                     <style>
@@ -2144,7 +2144,7 @@
 
             <section class="block85 simple-block">
                 <div class="l-container">
-                    <h2>Ремонт выполняется специализированными бригадами</h2>
+                    <h2 class="first-title section-title">Ремонт выполняется специализированными бригадами</h2>
                     <p>Капитальный ремонт и отделка вашей квартиры выполняется бригадами с узкой специализацией на конкретном виде работ. Благодаря этому мы всегда обеспечиваем высокий уровень на всех этапах и качественный результат. Все специалисты нашей компании являются гражданами РФ и РБ. Ниже представлены фото наших мастеров в процессе работы:</p>
                 </div>
 
@@ -2241,7 +2241,7 @@
 
             <section class="block6 advantages-block">
                 <div class="l-container">
-                    <h2>Преимущества работы с генеральным подрядчиком</h2>
+                    <h2 class="first-title section-title">Преимущества работы с генеральным подрядчиком</h2>
                     <p>Ключевым аргументом Заказчика в пользу найма отдельных бригад для каждого вида работ обычно становится "экономия". Но если Вы внимательно просчитаете все затраты времени и ресурсов, то обнаружите, что при обращении к разным исполнителям суммарная экономия составит не более 3-5%. Взамен этой скромной суммы Вам придется самостоятельно подобрать бригады для каждого этапа евроремонта, проконтролировать выполнение требований дизайн-проекта, заняться вопросами снабжения объекта материалами - то есть стать фактически прорабом. Работая с нами, как с одним подрядчиком, вы платите лишь немного больше, но при этом мы берем на себя все задачи управления и осуществления контроля за производственным процессом.</p>
                     <div class="masonry-cont adv-masonry">
                         <div class="masonry-item-stt adv-item-stt">
@@ -2275,7 +2275,7 @@
 
             <section class="block89 simple-block">
                 <div class="l-container">
-                    <h2>Визуальное и технологическое качество</h2>
+                    <h2 class="first-title section-title">Визуальное и технологическое качество</h2>
 
                     <p><span style="font-family: ProbaPro_light, Arial, Helvetica, sans-serif; font-size: 19px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; background-color: rgb(255, 255, 255);">Единые технологические стандарты компании и СНиПы, позволяют добиваться единого качества на всех объектах компании, не зависимо, от состава поставленной бригады.</span><br></p>
 
@@ -2570,7 +2570,7 @@
                                                 <form id="calc-form" name="btn" type="question" action="mailer/config.php" method="post" enctype="multipart/form-data">
                             <input name="user_email" value="заявка из калькулятора" type="hidden">
                             <div class="bid-cost bid-cost_grey cost-block">
-                                <h2>Заявка на расчет стоимости ремонта</h2>
+                                <h2 class="first-title section-title">Заявка на расчет стоимости ремонта</h2>
                                 <div class="cost-form-inner">
                                     <div class="cost-form-inner-l">
                                         <input name="user_name" value="" placeholder="Имя" type="text" required>
@@ -2595,7 +2595,7 @@
             <a name="calculator"></a>
             <section id="calculator" class="block80 team-video-block portfolio-text-block">
                 <div class="l-container team-container">
-                    <h2>Калькулятор расчета стоимости</h2>
+                    <h2 class="first-title section-title">Калькулятор расчета стоимости</h2>
                     <p>
                         Общая стоимость комплексного ремонта квартиры за метр квадратный, зависит от площади
                         помещения и дизайнерско-технической сложности. Следует отметить, наш калькулятор считает достаточно точно, но, при этом, нужно понимать, что цены, указанные ниже,
@@ -8844,7 +8844,7 @@
 
             <section class="block106 info-block">
                 <div class="l-container">
-                    <h2>Фотографии наших работ</h2>
+                    <h2 class="first-title section-title">Фотографии наших работ</h2>
 
                 </div>
 
@@ -9026,7 +9026,7 @@
             <section class="">
                 <div class="l-container">
                     <center>
-                        <h2>Дипломы и сертификаты</h2>
+                        <h2 class="first-title section-title">Дипломы и сертификаты</h2>
                     </center>
                 </div>
                 <br><br>
@@ -9151,12 +9151,12 @@
                     <div class="l-container">
                         <div class="footer-inner">
                             <div class="footer-item footer-contacts col-md-6 col-sm-6">
-                                <p>г. Москва, Ленинградский проспект, 80 к21</p>
+                                <p>г. Москва, Ленинский проспект 109 6-й этаж офис 24</p>
 
-                                <p>Офис: +7 (495) 414-26-92</p>
-                                <p>e-mail: ac-rem@mail.ru</p>
+                                <p>Телефон: +7 (495) 414-26-92</p>
+                                <p>e-mail: info@rem-ac.ru</p>
                                 <p><a href="index.html#">Не является публичной офертой</a></p>
-                                <p>2013 - 2020</p>
+                                <p>2007 - 2021</p>
                             </div>
                             <div class="footer-item footer-moskov col-md-6 col-sm-6">
                                 <img src="img/kollaj.jpg" />

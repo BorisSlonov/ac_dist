@@ -15,7 +15,7 @@ $flink=$domen.$fname;
 	$subject = "СООБЩЕНИЕ С САЙТА REM-AC.RU";
 	$headers = "From: REM-AC.RU <info@rem-ac.ru>\r\nContent-type: text/html; charset=utf-8 \r\n";
 
-	$message = "<h2> Заказан расчёт стоимости!</h2> 
+	$message = "<h2 class="first-title section-title"> Заказан расчёт стоимости!</h2> 
 		<p>Имя - ".$_POST['name']."</p>
 		<p>Телефон - ".$_POST['phone']."</p>
 		<p>Email - ".$_POST['email']."</p>

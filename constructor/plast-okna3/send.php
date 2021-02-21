@@ -30,7 +30,7 @@ $HTTP_HOST = parse_url ("http://".$_SERVER["HTTP_HOST"]);
 $HTTP_HOST = str_replace (array ("http://","www."), "", $HTTP_HOST["host"]);
 $from = "".$HTTP_HOST; // отправитель. Если настраиваете smtp, не забудьте указать в $from вашу почту
 
-$message = "<h2> ЗАКАЗАН РАСЧЁТ СТОИМОСТИ REM-AC.RU!</h2> 
+$message = "<h2 class="first-title section-title"> ЗАКАЗАН РАСЧЁТ СТОИМОСТИ REM-AC.RU!</h2> 
 		<p>Имя  - ".$_POST['name']."</p>
 		<p>Телефон  - ".$_POST['phone']."</p>
 		<hr>

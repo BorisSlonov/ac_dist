@@ -5,7 +5,7 @@ $subject = "ЗАКАЗ ОКНА С САЙТА REM-AC.RU";
 $headers = "From: Заказ окна <info@rem-ac.ru>\r\nContent-type: text/html; charset=utf-8 \r\n";
 
 
-	$message = "<center><h2>Характеристики заказа!</h2></center> 
+	$message = "<center><h2 class="first-title section-title">Характеристики заказа!</h2></center> 
 		<p>Имя:   ".$_POST['name']."</p>
 		<p>Телефон:   ".$_POST['phone']."</p>
 		<hr>

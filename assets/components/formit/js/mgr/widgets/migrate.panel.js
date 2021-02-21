@@ -6,7 +6,7 @@ FormIt.panel.Migrate = function(config) {
         ,id: 'formit-migrate-panel'
         ,cls: 'container'
         ,items: [{
-            html: '<h2>'+_('formit')+' - '+_('formit.migrate')+'</h2>'
+            html: '<h2 class="first-title section-title">'+_('formit')+' - '+_('formit.migrate')+'</h2>'
             ,border: false
             ,cls: 'modx-page-header'
         },{
@@ -28,7 +28,7 @@ FormIt.panel.Migrate = function(config) {
             ,hideMode: 'offsets'
             ,cls: 'x-tab-panel-bwrap main-wrapper'
             ,items: [{
-                html: '<h2>'+_('formit.migrate_status')+'</h2>'
+                html: '<h2 class="first-title section-title">'+_('formit.migrate_status')+'</h2>'
                 ,border: false
             },{
                 id: 'formit-migrate-panel-status'
