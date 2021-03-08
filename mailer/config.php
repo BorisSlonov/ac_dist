@@ -34,7 +34,7 @@ try {
 
     // Получатель письма
     $mail->addAddress('sslonovboriss@yandex.ru'); 
-    $mail->addAddress('info@rem-ac.ru'); 
+    $mail->addAddress('luxsmeta@mail.ru'); 
 
     
 

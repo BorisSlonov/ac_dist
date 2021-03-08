@@ -1,7 +1,0 @@
-<krpano version="1.19">
-
-	<!-- <hotspot name="nadir" url="i/nadir.png" ath="0" atv="90" distorted="true" scale="0.25" rotate="0.0" rotatewithview="true" zoom="true" flying="0" onclick="openurl('http://n-komfort.ru/', _blank)" keep="true" />
-	
-	<events name="nadir" onviewchange="copy(hotspot[nadir].ath, view.hlookat);" keep="true" /> -->
-
-</krpano>

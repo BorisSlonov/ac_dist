@@ -32,9 +32,9 @@ try {
     $mail->Port       = 465;
     $mail->setFrom('fresh-avocode@yandex.ru', 'Заявка с сайта'); // Адрес самой почты и имя отправителя
 
-    // Получатель письма
-    $mail->addAddress('sslonovboriss@yandex.ru'); 
-    $mail->addAddress('info@rem-ac.ru'); 
+   // Получатель письма
+   $mail->addAddress('sslonovboriss@yandex.ru'); 
+   $mail->addAddress('luxsmeta@mail.ru'); 
 
     
 

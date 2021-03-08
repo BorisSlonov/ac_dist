@@ -1,4 +1,4 @@
-<p></p><br><font color="red">@font-face {
+@font-face {
     font-family: 'FontAwesome';
     src: url(/fonts/fontawesome-webfont.eot?v=4.3.0);
     src: url(/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0) format('embedded-opentype'), url(/fonts/fontawesome-webfont.woff2?v=4.3.0) format('woff2'), url(/fonts/fontawesome-webfont.woff?v=4.3.0) format('woff'), url(/fonts/fontawesome-webfont.ttf?v=4.3.0) format('truetype'), url(/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular) format('svg');
@@ -7705,7 +7705,8 @@ em {
     .menuTrigger {
         display: block;
         float: right;
-        position: fixed margin-bottom: 20px;
+        position: fixed;
+     margin-bottom: 20px;
         cursor: pointer;
         padding: 3px 6px;
         /* background-color: #fff; */
@@ -12139,7 +12140,7 @@ a.preview {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: url(/img/arrow_n_l.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(/new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .info-carousel .owl-next {
@@ -12153,7 +12154,7 @@ a.preview {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: url(/img/arrow_n_r.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(/new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .quality-carousel .owl-prev {
@@ -12167,7 +12168,7 @@ a.preview {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: url(/img/arrow_n_l.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(/new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .quality-carousel .owl-next {
@@ -12181,7 +12182,7 @@ a.preview {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: url(/img/arrow_n_r.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(/new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .js-gallery-inner_i .owl-prev {
@@ -12487,7 +12488,7 @@ header.shadow.l-main-block {}
     margin: auto;
     width: 48px;
     height: 48px;
-    background: url(/img/arrow_n_r.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(/new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .js-gallery-inner_i .owl-prev:after {
@@ -12500,7 +12501,7 @@ header.shadow.l-main-block {}
     margin: auto;
     width: 48px;
     height: 48px;
-    background: url(/img/arrow_n_l.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(/new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .js-gallery-inner_i .owl-next {
@@ -13158,8 +13159,8 @@ section.team-gallery img {
 
 .portfolio-row-carousel-small {
     display: inline-block !important;
-    width: 594px;
     position: relative;
+    flex-basis: 45%;
 }
 
 .portfolio-row-carousel-small:nth-child(odd) {
@@ -13548,7 +13549,7 @@ section.process-block .l-container {
     margin: auto;
     width: 48px;
     height: 48px;
-    background: url(/img/arrow_n_l.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(/new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .owl-next:after {
@@ -13562,7 +13563,7 @@ section.process-block .l-container {
     margin: auto;
     width: 48px;
     height: 48px;
-    background: url(/img/arrow_n_r.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(/new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .owl-carousel:hover .owl-prev {
@@ -14165,8 +14166,8 @@ p.owl-thumb-item.owl-thumb-item_ii:before {
 
 .info-carousel img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
+    height: 100%;
     -webkit-transform: scale(1);
     transform: scale(1);
     transition: -webkit-transform .3s cubic-bezier(0, .6, .25, 1);
@@ -22166,7 +22167,6 @@ header.l-main-block.header_t .mm-item.mm-item-submenu:hover .submenu-wrap {
     }
     .calcul_wrapper .repairs {
         visibility: hidden;
-        !important;
         height: 0;
         width: 0;
         position: absolute;

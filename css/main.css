@@ -2211,7 +2211,7 @@ a.preview {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: url(../img/arrow_n_l.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(../new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .info-carousel .owl-next {
@@ -2225,7 +2225,7 @@ a.preview {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: url(../img/arrow_n_r.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(../new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .quality-carousel .owl-prev {
@@ -2239,7 +2239,7 @@ a.preview {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: url(../img/arrow_n_l.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(../new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .quality-carousel .owl-next {
@@ -2253,7 +2253,7 @@ a.preview {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: url(../img/arrow_n_r.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(../new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .js-gallery-inner_i .owl-prev {
@@ -2565,7 +2565,7 @@ header.shadow.l-main-block {
     margin: auto;
     width: 48px;
     height: 48px;
-    background: url(../img/arrow_n_r.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(../new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .js-gallery-inner_i .owl-prev:after {
@@ -2578,7 +2578,7 @@ header.shadow.l-main-block {
     margin: auto;
     width: 48px;
     height: 48px;
-    background: url(../img/arrow_n_l.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(../new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 
@@ -3650,7 +3650,7 @@ section.process-block .l-container {
     margin: auto;
     width: 48px;
     height: 48px;
-    background: url(../img/arrow_n_l.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(../new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .owl-next:after {
@@ -3664,7 +3664,7 @@ section.process-block .l-container {
     margin: auto;
     width: 48px;
     height: 48px;
-    background: url(../img/arrow_n_r.png) no-repeat center rgba(255, 255, 255, 0.7);
+    background: url(../new-assets/images/arrow.svg) no-repeat center rgba(255, 255, 255, 0.7);
 }
 
 .owl-carousel:hover .owl-prev {
